@@ -1,0 +1,35 @@
+{
+  "benchmark_user_1": {
+    "name": "Linh",
+    "learning": "Python",
+    "duration": "2 months"
+  },
+  "benchmark_user_2": {
+    "allergy": "đậu nành"
+  },
+  "benchmark_user_3": {},
+  "benchmark_user_4": {},
+  "benchmark_user_5": {
+    "profession": "backend developer",
+    "specialization": "Python and FastAPI"
+  },
+  "benchmark_user_6": {
+    "name": "Nam",
+    "job_title": "data scientist",
+    "location": "Hà Nội",
+    "allergy": "hải sản"
+  },
+  "benchmark_user_7": {},
+  "benchmark_user_8": {
+    "field_of_study": "DevOps",
+    "technology": "container technology"
+  },
+  "benchmark_user_9": {
+    "name": "Minh",
+    "location": "TP.HCM"
+  },
+  "benchmark_user_10": {
+    "name": "Hoa",
+    "occupation": "nhân viên tại một công ty startup fintech"
+  }
+}

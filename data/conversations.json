@@ -1,0 +1,907 @@
+{
+  "run_id": "2026-04-24T12:52:36",
+  "model": "gpt-4o-mini",
+  "generated_at": "2026-04-24T12:59:20",
+  "scenario_count": 10,
+  "pass_count": 10,
+  "scenarios": [
+    {
+      "scenario_id": 1,
+      "description": "Recall user name after 6 turns",
+      "category": "profile_recall",
+      "started_at": "2026-04-24T12:52:36",
+      "finished_at": "2026-04-24T12:53:08",
+      "setup_turns": [
+        {
+          "turn": 1,
+          "role": "user",
+          "content": "Xin chào! Tôi tên là Linh.",
+          "timestamp": "2026-04-24T12:52:39"
+        },
+        {
+          "turn": 1,
+          "role": "assistant",
+          "content": "Xin chào Linh! Rất vui được gặp bạn. Bạn có cần giúp gì hôm nay không?",
+          "timestamp": "2026-04-24T12:52:39"
+        },
+        {
+          "turn": 2,
+          "role": "user",
+          "content": "Tôi đang học Python được 2 tháng rồi.",
+          "timestamp": "2026-04-24T12:52:43"
+        },
+        {
+          "turn": 2,
+          "role": "assistant",
+          "content": "Thật tuyệt vời, Linh! Hai tháng học Python là một khoảng thời gian tốt để bắt đầu nắm vững các khái niệm cơ bản. Bạn đã học được những gì và có điều gì bạn muốn tìm hiểu thêm không?",
+          "timestamp": "2026-04-24T12:52:43"
+        },
+        {
+          "turn": 3,
+          "role": "user",
+          "content": "Bạn có thể giải thích list comprehension không?",
+          "timestamp": "2026-04-24T12:52:49"
+        },
+        {
+          "turn": 3,
+          "role": "assistant",
+          "content": "Chắc chắn rồi, Linh! List comprehension là một cách ngắn gọn và hiệu quả để tạo ra danh sách trong Python. Nó cho phép bạn tạo danh sách mới bằng cách áp dụng một biểu thức cho từng phần tử trong một iterable (như danh sách, tuple, hoặc range).\n\nCú pháp cơ bản của list comprehension là:\n\n```python\nnew_list = [expression for item in iterable if condition]\n```\n\n- **expression**: Biểu thức mà bạn muốn áp dụng cho từng phần tử.\n- **item**: Từng phần tử trong iterable.\n- **iterable**: Danh sách hoặc bất kỳ đối tượng nào có thể lặp lại.\n- **condition**: (Tùy chọn) Một điều kiện để lọc các phần tử.\n\nVí dụ, nếu bạn muốn tạo một danh sách các số chẵn từ 0 đến 9, bạn có thể làm như sau:\n\n```python\neven_numbers = [x for x in range(10) if x % 2 == 0]\n```\n\nKết quả sẽ là:\n\n```python\n[0, 2, 4, 6, 8]\n```\n\nList comprehension giúp mã nguồn của bạn ngắn gọn và dễ đọc hơn. Bạn có muốn thử một ví dụ nào khác không?",
+          "timestamp": "2026-04-24T12:52:49"
+        },
+        {
+          "turn": 4,
+          "role": "user",
+          "content": "Còn lambda function thì sao?",
+          "timestamp": "2026-04-24T12:52:55"
+        },
+        {
+          "turn": 4,
+          "role": "assistant",
+          "content": "Lambda function trong Python là một cách để định nghĩa một hàm nhỏ, không có tên (anonymous function) chỉ trong một dòng. Nó thường được sử dụng khi bạn cần một hàm đơn giản mà không cần phải định nghĩa một hàm đầy đủ với từ khóa `def`.\n\nCú pháp của lambda function là:\n\n```python\nlambda arguments: expression\n```\n\n- **arguments**: Các tham số mà hàm nhận vào.\n- **expression**: Biểu thức mà hàm trả về.\n\nVí dụ, nếu bạn muốn tạo một hàm để tính bình phương của một số, bạn có thể sử dụng lambda như sau:\n\n```python\nsquare = lambda x: x ** 2\nprint(square(5))  # Kết quả: 25\n```\n\nLambda function thường được sử dụng với các hàm như `map()`, `filter()`, và `sorted()`. Ví dụ, bạn có thể sử dụng lambda với `map()` để tính bình phương của tất cả các số trong một danh sách:\n\n```python\nnumbers = [1, 2, 3, 4, 5]\nsquared_numbers = list(map(lambda x: x ** 2, numbers))\nprint(squared_numbers)  # Kết quả: [1, 4, 9, 16, 25]\n```\n\nLambda function rất hữu ích khi bạn cần một hàm tạm thời mà không muốn tạo một hàm đầy đủ. Bạn có muốn tìm hiểu thêm về cách sử dụng lambda trong một ngữ cảnh cụ thể không?",
+          "timestamp": "2026-04-24T12:52:55"
+        },
+        {
+          "turn": 5,
+          "role": "user",
+          "content": "Tôi hay dùng VS Code để code Python.",
+          "timestamp": "2026-04-24T12:52:58"
+        },
+        {
+          "turn": 5,
+          "role": "assistant",
+          "content": "VS Code là một lựa chọn tuyệt vời để lập trình Python! Nó có nhiều tính năng hữu ích như tự động hoàn thành mã, gợi ý cú pháp, và tích hợp terminal. Bạn có thể cài đặt các extension như Python extension của Microsoft để cải thiện trải nghiệm lập trình của mình.\n\nNếu bạn cần hỗ trợ về cách cấu hình VS Code cho Python hoặc muốn biết thêm về các tính năng cụ thể, hãy cho tôi biết nhé!",
+          "timestamp": "2026-04-24T12:52:58"
+        },
+        {
+          "turn": 6,
+          "role": "user",
+          "content": "Generator expression khác list comprehension như thế nào?",
+          "timestamp": "2026-04-24T12:53:05"
+        },
+        {
+          "turn": 6,
+          "role": "assistant",
+          "content": "Generator expression và list comprehension đều được sử dụng để tạo ra các tập hợp dữ liệu, nhưng chúng có một số khác biệt quan trọng:\n\n1. **Cú pháp**:\n   - Cả hai đều có cú pháp tương tự, nhưng generator expression sử dụng dấu ngoặc đơn `()` thay vì dấu ngoặc vuông `[]` như list comprehension.\n   - Ví dụ:\n     - List comprehension:\n       ```python\n       squares = [x ** 2 for x in range(5)]\n       ```\n     - Generator expression:\n       ```python\n       squares_gen = (x ** 2 for x in range(5))\n       ```\n\n2. **Kiểu dữ liệu**:\n   - List comprehension tạo ra một danh sách (list) và lưu trữ tất cả các phần tử trong bộ nhớ.\n   - Generator expression tạo ra một generator, mà chỉ tạo ra các phần tử khi cần thiết (lazy evaluation). Điều này có nghĩa là nó không lưu trữ tất cả các phần tử trong bộ nhớ cùng một lúc, giúp tiết kiệm bộ nhớ khi làm việc với các tập dữ liệu lớn.\n\n3. **Hiệu suất**:\n   - Vì generator expression không tạo ra toàn bộ danh sách ngay lập tức, nó có thể tiết kiệm bộ nhớ và có thể nhanh hơn trong một số trường hợp khi bạn chỉ cần lặp qua các phần tử một lần.\n\n4. **Sử dụng**:\n   - Bạn có thể sử dụng generator expression trong các hàm như `sum()`, `list()`, hoặc `for` loop để lặp qua các phần tử.\n   - Ví dụ:\n     ```python\n     total = sum(x ** 2 for x in range(5))  # Sử dụng generator expression\n     ```\n\nTóm lại, nếu bạn cần một danh sách đầy đủ và có thể truy cập các phần tử nhiều lần, bạn nên sử dụng list comprehension. Nếu bạn chỉ cần lặp qua các phần tử một lần và muốn tiết kiệm bộ nhớ, generator expression là lựa chọn tốt hơn. Bạn có muốn thử một ví dụ cụ thể nào không?",
+          "timestamp": "2026-04-24T12:53:05"
+        }
+      ],
+      "probe": {
+        "question": "Bạn có nhớ tên tôi là gì không?",
+        "no_memory_response": {
+          "content": "Xin lỗi, nhưng tôi không có khả năng nhớ thông tin cá nhân của bạn. Tuy nhiên, tôi rất vui được giúp đỡ bạn với bất kỳ câu hỏi nào bạn có!",
+          "word_count": 32
+        },
+        "with_memory_response": {
+          "content": "Có, tên bạn là Linh! Nếu bạn có bất kỳ câu hỏi nào khác hoặc cần hỗ trợ thêm về Python, hãy cho tôi biết nhé!",
+          "word_count": 26
+        }
+      },
+      "result": {
+        "passed": true,
+        "expected_keywords": [
+          "Linh"
+        ],
+        "pass_condition": "any"
+      }
+    },
+    {
+      "scenario_id": 2,
+      "description": "Allergy conflict update (sữa bò → đậu nành)",
+      "category": "conflict_update",
+      "started_at": "2026-04-24T12:53:08",
+      "finished_at": "2026-04-24T12:53:33",
+      "setup_turns": [
+        {
+          "turn": 1,
+          "role": "user",
+          "content": "Tôi dị ứng sữa bò.",
+          "timestamp": "2026-04-24T12:53:11"
+        },
+        {
+          "turn": 1,
+          "role": "assistant",
+          "content": "Cảm ơn bạn đã chia sẻ! Nếu bạn dị ứng với sữa bò, hãy cẩn thận khi chọn thực phẩm và luôn kiểm tra nhãn sản phẩm để tránh các thành phần từ sữa. Bạn có muốn tìm hiểu thêm về các lựa chọn thay thế cho sữa bò không?",
+          "timestamp": "2026-04-24T12:53:11"
+        },
+        {
+          "turn": 2,
+          "role": "user",
+          "content": "Bạn hãy gợi ý một thực đơn buổi sáng phù hợp cho tôi.",
+          "timestamp": "2026-04-24T12:53:17"
+        },
+        {
+          "turn": 2,
+          "role": "assistant",
+          "content": "Dưới đây là một thực đơn buổi sáng phù hợp cho bạn, không chứa sữa bò:\n\n1. **Bánh mì nướng với bơ đậu phộng**: Bạn có thể dùng bánh mì nguyên cám nướng và phết bơ đậu phộng lên. Thêm một ít chuối cắt lát lên trên để tăng hương vị.\n\n2. **Sinh tố trái cây**: Sử dụng sữa hạnh nhân hoặc sữa dừa thay cho sữa bò. Bạn có thể kết hợp chuối, dâu tây và một ít rau bina để có một ly sinh tố bổ dưỡng.\n\n3. **Yến mạch nấu**: Nấu yến mạch với nước hoặc sữa hạnh nhân, thêm một ít mật ong, hạt chia và trái cây tươi như táo hoặc việt quất.\n\n4. **Trứng chiên**: Bạn có thể làm trứng chiên với rau củ như ớt chuông, hành tây và cà chua. \n\nHy vọng bạn sẽ thích thực đơn này! Nếu bạn cần thêm gợi ý, hãy cho tôi biết nhé!",
+          "timestamp": "2026-04-24T12:53:17"
+        },
+        {
+          "turn": 3,
+          "role": "user",
+          "content": "À nhầm, tôi dị ứng đậu nành chứ không phải sữa bò.",
+          "timestamp": "2026-04-24T12:53:23"
+        },
+        {
+          "turn": 3,
+          "role": "assistant",
+          "content": "Cảm ơn bạn đã làm rõ! Nếu bạn dị ứng với đậu nành, tôi sẽ điều chỉnh thực đơn buổi sáng cho phù hợp. Dưới đây là một thực đơn không chứa sữa bò và đậu nành:\n\n1. **Bánh mì nướng với bơ hạt**: Bạn có thể dùng bánh mì nguyên cám nướng và phết bơ hạt như bơ hạnh nhân hoặc bơ hạt điều lên.\n\n2. **Sinh tố trái cây**: Sử dụng nước dừa hoặc nước trái cây thay cho sữa bò và sữa đậu nành. Bạn có thể kết hợp chuối, dâu tây và một ít rau bina để có một ly sinh tố bổ dưỡng.\n\n3. **Yến mạch nấu**: Nấu yến mạch với nước hoặc nước dừa, thêm một ít mật ong, hạt chia và trái cây tươi như táo hoặc việt quất.\n\n4. **Trứng chiên**: Bạn có thể làm trứng chiên với rau củ như ớt chuông, hành tây và cà chua.\n\nHy vọng thực đơn này sẽ phù hợp với bạn! Nếu bạn cần thêm gợi ý hoặc có yêu cầu khác, hãy cho tôi biết nhé!",
+          "timestamp": "2026-04-24T12:53:23"
+        },
+        {
+          "turn": 4,
+          "role": "user",
+          "content": "Cảm ơn bạn đã lưu ý nhé.",
+          "timestamp": "2026-04-24T12:53:27"
+        },
+        {
+          "turn": 4,
+          "role": "assistant",
+          "content": "Không có gì đâu! Tôi luôn sẵn sàng giúp đỡ bạn. Nếu bạn có bất kỳ câu hỏi nào khác hoặc cần thêm gợi ý về thực phẩm, hãy cho tôi biết nhé! Chúc bạn có một buổi sáng tuyệt vời!",
+          "timestamp": "2026-04-24T12:53:27"
+        }
+      ],
+      "probe": {
+        "question": "Tôi bị dị ứng với thứ gì vậy?",
+        "no_memory_response": {
+          "content": "Để xác định bạn bị dị ứng với thứ gì, bạn cần xem xét các triệu chứng mà bạn đang gặp phải và các yếu tố môi trường xung quanh. Một số triệu chứng phổ biến của dị ứng bao gồm:\n\n- Ngứa, phát ban hoặc nổi mề đay trên da\n- Hắt hơi, ngứa mũi, chảy nước mũi\n- Ho, khó thở, thở khò khè\n- Đau bụng, tiêu chảy\n\nCác tác nhân gây dị ứng phổ biến bao gồm:\n\n- Phấn hoa từ cây cỏ, hoa\n- Bụi nhà và các loại ve bụi\n- Lông thú cưng (chó, mèo)\n- Thực phẩm (như đậu phộng, hải sản, sữa)\n- Thuốc (như kháng sinh)\n- Côn trùng (như ong, muỗi)\n\nNếu bạn nghi ngờ mình bị dị ứng, tốt nhất là nên tham khảo ý kiến bác sĩ hoặc chuyên gia dị ứng để được chẩn đoán chính xác và điều trị phù hợp. Họ có thể thực hiện các xét nghiệm dị ứng để xác định nguyên nhân cụ thể.",
+          "word_count": 173
+        },
+        "with_memory_response": {
+          "content": "Bạn bị dị ứng với đậu nành. Nếu bạn cần thêm thông tin hoặc gợi ý về thực phẩm an toàn cho dị ứng của mình, hãy cho tôi biết nhé!",
+          "word_count": 31
+        }
+      },
+      "result": {
+        "passed": true,
+        "expected_keywords": [
+          "đậu nành"
+        ],
+        "pass_condition": "any"
+      }
+    },
+    {
+      "scenario_id": 3,
+      "description": "Recall previous Docker debug lesson",
+      "category": "episodic_recall",
+      "started_at": "2026-04-24T12:53:33",
+      "finished_at": "2026-04-24T12:54:24",
+      "setup_turns": [
+        {
+          "turn": 1,
+          "role": "user",
+          "content": "Tôi gặp lỗi khi connect Django đến PostgreSQL qua Docker Compose.",
+          "timestamp": "2026-04-24T12:53:41"
+        },
+        {
+          "turn": 1,
+          "role": "assistant",
+          "content": "Khi kết nối Django đến PostgreSQL qua Docker Compose, có một số vấn đề phổ biến mà bạn có thể gặp phải. Dưới đây là một số bước kiểm tra và giải quyết lỗi:\n\n1. **Kiểm tra cấu hình `docker-compose.yml`:** Đảm bảo rằng bạn đã cấu hình đúng service cho Django và PostgreSQL. Ví dụ:\n\n   ```yaml\n   version: '3'\n   services:\n     db:\n       image: postgres\n       environment:\n         POSTGRES_DB: your_db_name\n         POSTGRES_USER: your_user\n         POSTGRES_PASSWORD: your_password\n     web:\n       build: .\n       command: python manage.py runserver 0.0.0.0:8000\n       volumes:\n         - .:/code\n       ports:\n         - \"8000:8000\"\n       depends_on:\n         - db\n       environment:\n         DATABASE_URL: postgres://your_user:your_password@db/your_db_name\n   ```\n\n2. **Sử dụng tên service làm hostname:** Trong Django, khi cấu hình kết nối đến PostgreSQL, bạn cần sử dụng tên service của PostgreSQL (trong ví dụ trên là `db`) thay vì `localhost`. Ví dụ trong `settings.py`:\n\n   ```python\n   DATABASES = {\n       'default': {\n           'ENGINE': 'django.db.backends.postgresql',\n           'NAME': 'your_db_name',\n           'USER': 'your_user',\n           'PASSWORD': 'your_password',\n           'HOST': 'db',  # Sử dụng tên service\n           'PORT': '5432',\n       }\n   }\n   ```\n\n3. **Kiểm tra trạng thái container:** Sử dụng lệnh `docker-compose ps` để kiểm tra xem các container có đang chạy không. Nếu PostgreSQL chưa sẵn sàng khi Django cố gắng kết nối, bạn có thể gặp lỗi.\n\n4. **Thêm delay cho Django:** Nếu bạn gặp lỗi do PostgreSQL chưa sẵn sàng, bạn có thể thêm một số delay trong lệnh khởi động của Django hoặc sử dụng một script để kiểm tra kết nối trước khi khởi động ứng dụng.\n\n5. **Xem log của container:** Sử dụng lệnh `docker-compose logs db` để xem log của PostgreSQL và kiểm tra xem có lỗi gì không.\n\nNếu bạn vẫn gặp vấn đề, hãy cung cấp thêm thông tin về lỗi cụ thể mà bạn nhận được để tôi có thể giúp bạn tốt hơn!",
+          "timestamp": "2026-04-24T12:53:41"
+        },
+        {
+          "turn": 2,
+          "role": "user",
+          "content": "Lỗi cụ thể: django.db.utils.OperationalError: could not connect to server.",
+          "timestamp": "2026-04-24T12:53:51"
+        },
+        {
+          "turn": 2,
+          "role": "assistant",
+          "content": "Lỗi `django.db.utils.OperationalError: could not connect to server` thường chỉ ra rằng Django không thể kết nối đến PostgreSQL. Dưới đây là một số nguyên nhân và cách khắc phục:\n\n1. **Kiểm tra tên host:** Đảm bảo rằng bạn đang sử dụng đúng tên service trong cấu hình Django. Trong `settings.py`, `HOST` nên là tên service của PostgreSQL (ví dụ: `db` nếu bạn đã đặt tên service như vậy trong `docker-compose.yml`).\n\n   ```python\n   DATABASES = {\n       'default': {\n           'ENGINE': 'django.db.backends.postgresql',\n           'NAME': 'your_db_name',\n           'USER': 'your_user',\n           'PASSWORD': 'your_password',\n           'HOST': 'db',  # Đảm bảo tên này đúng\n           'PORT': '5432',\n       }\n   }\n   ```\n\n2. **Kiểm tra trạng thái container PostgreSQL:** Sử dụng lệnh `docker-compose ps` để kiểm tra xem container PostgreSQL có đang chạy không. Nếu không, bạn có thể khởi động lại bằng lệnh `docker-compose up`.\n\n3. **Kiểm tra log của PostgreSQL:** Sử dụng lệnh `docker-compose logs db` để xem log của container PostgreSQL. Điều này có thể cung cấp thông tin về lý do tại sao PostgreSQL không sẵn sàng hoặc không thể khởi động.\n\n4. **Thời gian khởi động:** PostgreSQL có thể mất một chút thời gian để khởi động và sẵn sàng nhận kết nối. Nếu Django cố gắng kết nối ngay lập tức, có thể nó sẽ không thành công. Bạn có thể thêm một số delay trong lệnh khởi động của Django hoặc sử dụng một script để kiểm tra kết nối trước khi khởi động ứng dụng.\n\n5. **Kiểm tra cấu hình mạng:** Đảm bảo rằng cả hai service (Django và PostgreSQL) đều nằm trong cùng một Docker network. Nếu bạn không chỉ định network, Docker Compose sẽ tự động tạo một network cho bạn.\n\n6. **Kiểm tra thông tin xác thực:** Đảm bảo rằng tên database, username và password trong `settings.py` khớp với thông tin bạn đã cấu hình trong `docker-compose.yml`.\n\nNếu bạn đã kiểm tra tất cả các điểm trên mà vẫn gặp lỗi, hãy cung cấp thêm thông tin về cấu hình `docker-compose.yml` và log của PostgreSQL để tôi có thể giúp bạn tốt hơn!",
+          "timestamp": "2026-04-24T12:53:51"
+        },
+        {
+          "turn": 3,
+          "role": "user",
+          "content": "Bạn gợi ý tôi dùng tên service thay vì localhost — đã fix được rồi!",
+          "timestamp": "2026-04-24T12:53:54"
+        },
+        {
+          "turn": 3,
+          "role": "assistant",
+          "content": "Tuyệt vời! Rất vui khi biết rằng bạn đã khắc phục được vấn đề bằng cách sử dụng tên service thay vì `localhost`. Đây là một trong những điểm quan trọng khi làm việc với Docker Compose, vì các service giao tiếp với nhau qua tên service trong cùng một network.\n\nNếu bạn có bất kỳ câu hỏi nào khác về Django, PostgreSQL, hoặc bất kỳ vấn đề nào khác liên quan đến phát triển ứng dụng, đừng ngần ngại hỏi nhé!",
+          "timestamp": "2026-04-24T12:53:54"
+        },
+        {
+          "turn": 4,
+          "role": "user",
+          "content": "Cảm ơn bạn rất nhiều.",
+          "timestamp": "2026-04-24T12:54:00"
+        },
+        {
+          "turn": 4,
+          "role": "assistant",
+          "content": "Không có gì đâu! Rất vui được giúp đỡ bạn. Nếu bạn cần thêm bất kỳ hỗ trợ nào trong tương lai, hãy thoải mái liên hệ. Chúc bạn thành công với dự án của mình!",
+          "timestamp": "2026-04-24T12:54:00"
+        },
+        {
+          "turn": 5,
+          "role": "user",
+          "content": "Bây giờ tôi muốn hỏi về Redis caching.",
+          "timestamp": "2026-04-24T12:54:09"
+        },
+        {
+          "turn": 5,
+          "role": "assistant",
+          "content": "Chắc chắn rồi! Redis là một in-memory data store rất phổ biến cho caching, session management, và message queuing. Dưới đây là một số thông tin cơ bản về Redis caching mà bạn có thể thấy hữu ích:\n\n### Caching với Redis\n\n1. **Cài đặt Redis:**\n   Bạn có thể cài đặt Redis bằng cách sử dụng Docker. Ví dụ:\n\n   ```yaml\n   version: '3'\n   services:\n     redis:\n       image: redis\n       ports:\n         - \"6379:6379\"\n   ```\n\n2. **Kết nối đến Redis trong Python:**\n   Sử dụng thư viện `redis-py` để kết nối đến Redis. Bạn có thể cài đặt nó bằng pip:\n\n   ```bash\n   pip install redis\n   ```\n\n   Sau đó, bạn có thể kết nối như sau:\n\n   ```python\n   import redis\n\n   r = redis.Redis(host='localhost', port=6379)\n   ```\n\n3. **Lưu trữ và lấy dữ liệu:**\n   Bạn có thể lưu trữ dữ liệu với TTL (Time To Live) để tự động xóa sau một khoảng thời gian nhất định:\n\n   ```python\n   # Lưu trữ với TTL 3600 giây\n   r.setex('key', 3600, 'value')\n\n   # Lấy giá trị\n   value = r.get('key')\n   ```\n\n4. **Chiến lược xóa cache:**\n   - **TTL-based:** Sử dụng `setex` để thiết lập thời gian sống cho cache.\n   - **Event-based:** Xóa cache khi có sự kiện cụ thể xảy ra (ví dụ: khi dữ liệu trong database thay đổi).\n   - **Manual delete:** Xóa cache thủ công khi cần.\n\n5. **Pub/Sub:** Redis cũng hỗ trợ mô hình publish/subscribe, cho phép bạn gửi thông điệp đến các subscriber:\n\n   ```python\n   # Publish a message\n   r.publish('channel', 'message')\n   ```\n\nNếu bạn có câu hỏi cụ thể nào về Redis caching hoặc muốn biết thêm chi tiết về một khía cạnh nào đó, hãy cho tôi biết!",
+          "timestamp": "2026-04-24T12:54:09"
+        },
+        {
+          "turn": 6,
+          "role": "user",
+          "content": "Cache invalidation hoạt động như thế nào?",
+          "timestamp": "2026-04-24T12:54:20"
+        },
+        {
+          "turn": 6,
+          "role": "assistant",
+          "content": "Cache invalidation là quá trình xóa hoặc làm mới dữ liệu trong cache để đảm bảo rằng dữ liệu luôn chính xác và cập nhật. Có một số chiến lược phổ biến cho cache invalidation:\n\n### 1. TTL-based (Time To Live)\n- **Mô tả:** Mỗi mục trong cache được gán một thời gian sống (TTL). Khi TTL hết hạn, mục đó sẽ tự động bị xóa khỏi cache.\n- **Ưu điểm:** Đơn giản và dễ triển khai. Dữ liệu cũ sẽ tự động bị xóa sau một khoảng thời gian nhất định.\n- **Nhược điểm:** Dữ liệu có thể trở nên lỗi thời trước khi TTL hết hạn, dẫn đến việc người dùng có thể nhận được thông tin không chính xác.\n\n### 2. Event-based\n- **Mô tả:** Cache được xóa hoặc làm mới khi có sự kiện cụ thể xảy ra, chẳng hạn như khi dữ liệu trong database thay đổi (thêm, sửa, xóa).\n- **Ưu điểm:** Đảm bảo rằng cache luôn chứa dữ liệu mới nhất. Thích hợp cho các ứng dụng có tính chất dữ liệu thay đổi thường xuyên.\n- **Nhược điểm:** Cần phải có logic để theo dõi các sự kiện và thực hiện xóa cache, có thể phức tạp hơn.\n\n### 3. Manual Delete\n- **Mô tả:** Lập trình viên hoặc quản trị viên có thể xóa cache thủ công khi cần thiết, chẳng hạn như khi cập nhật dữ liệu trong database.\n- **Ưu điểm:** Cung cấp sự kiểm soát hoàn toàn về khi nào dữ liệu trong cache được xóa.\n- **Nhược điểm:** Có thể dẫn đến lỗi nếu không được thực hiện đúng cách, và có thể gây ra overhead nếu phải xóa cache thường xuyên.\n\n### 4. Write-through và Write-back\n- **Write-through:** Khi dữ liệu được ghi vào cache, nó cũng được ghi vào database ngay lập tức. Điều này đảm bảo rằng cache luôn đồng bộ với database.\n- **Write-back:** Dữ liệu được ghi vào cache trước, và chỉ được ghi vào database sau một khoảng thời gian hoặc khi cache đầy. Điều này có thể cải thiện hiệu suất nhưng có thể dẫn đến mất dữ liệu nếu cache bị lỗi.\n\n### 5. Cache Aside\n- **Mô tả:** Ứng dụng sẽ kiểm tra cache trước khi truy cập vào database. Nếu dữ liệu không có trong cache, nó sẽ lấy từ database và lưu vào cache. Khi dữ liệu trong database thay đổi, cache sẽ được xóa hoặc làm mới.\n- **Ưu điểm:** Giảm thiểu số lần truy cập vào database và đảm bảo rằng cache chỉ chứa dữ liệu cần thiết.\n- **Nhược điểm:** Cần phải có logic để quản lý cache và đảm bảo tính đồng bộ.\n\nMỗi chiến lược có ưu và nhược điểm riêng, và lựa chọn chiến lược nào phụ thuộc vào yêu cầu cụ thể của ứng dụng của bạn. Nếu bạn có câu hỏi cụ thể hơn về một trong các chiến lược này hoặc cách triển khai chúng, hãy cho tôi biết!",
+          "timestamp": "2026-04-24T12:54:20"
+        }
+      ],
+      "probe": {
+        "question": "Lần trước tôi gặp vấn đề gì với Docker và bạn đã giúp tôi giải quyết như thế nào?",
+        "no_memory_response": {
+          "content": "Tôi không có khả năng nhớ lại các cuộc trò chuyện trước đây, nhưng tôi có thể giúp bạn giải quyết vấn đề với Docker ngay bây giờ. Bạn có thể cho tôi biết cụ thể vấn đề bạn đang gặp phải với Docker không? Tôi sẽ cố gắng hỗ trợ bạn tốt nhất có thể!",
+          "word_count": 56
+        },
+        "with_memory_response": {
+          "content": "Lần trước, bạn đã gặp vấn đề với việc kết nối Django đến PostgreSQL qua Docker Compose và nhận được lỗi `OperationalError`. Bạn đã giải quyết vấn đề này bằng cách sử dụng tên service thay vì `localhost` trong cấu hình kết nối của Django. \n\nCụ thể, bạn đã điều chỉnh `settings.py` để sử dụng tên service của PostgreSQL (ví dụ: `db`) làm hostname, điều này giúp Django có thể kết nối thành công đến database trong môi trường Docker.\n\nNếu bạn có thêm câu hỏi nào khác về Docker hoặc bất kỳ vấn đề nào khác, hãy cho tôi biết nhé!",
+          "word_count": 102
+        }
+      },
+      "result": {
+        "passed": true,
+        "expected_keywords": [
+          "docker",
+          "django",
+          "service",
+          "postgresql",
+          "localhost"
+        ],
+        "pass_condition": "any"
+      }
+    },
+    {
+      "scenario_id": 4,
+      "description": "Retrieve Python decorator FAQ chunk",
+      "category": "semantic_retrieval",
+      "started_at": "2026-04-24T12:54:24",
+      "finished_at": "2026-04-24T12:54:59",
+      "setup_turns": [
+        {
+          "turn": 1,
+          "role": "user",
+          "content": "Tôi muốn học các khái niệm Python nâng cao.",
+          "timestamp": "2026-04-24T12:54:31"
+        },
+        {
+          "turn": 1,
+          "role": "assistant",
+          "content": "Rất tốt! Dưới đây là một số khái niệm Python nâng cao mà bạn có thể tìm hiểu:\n\n1. **Decorators**: Như đã đề cập, decorators là một cách để thêm chức năng cho các hàm mà không cần thay đổi mã nguồn của chúng. Bạn có thể tìm hiểu cách tạo và sử dụng decorators tùy chỉnh.\n\n2. **Generators**: Generators cho phép bạn tạo ra một chuỗi các giá trị mà không cần phải lưu trữ tất cả chúng trong bộ nhớ. Bạn có thể sử dụng từ khóa `yield` để tạo ra một generator.\n\n3. **Context Managers**: Context managers giúp bạn quản lý tài nguyên, như mở và đóng tệp, một cách an toàn. Bạn có thể sử dụng từ khóa `with` để làm việc với context managers.\n\n4. **Metaclasses**: Metaclasses là một khái niệm nâng cao cho phép bạn kiểm soát cách mà các lớp được tạo ra. Bạn có thể tìm hiểu cách định nghĩa và sử dụng metaclasses.\n\n5. **Asyncio**: Nếu bạn quan tâm đến lập trình bất đồng bộ, bạn có thể tìm hiểu về thư viện `asyncio` để làm việc với các tác vụ bất đồng bộ trong Python.\n\n6. **Type Hints**: Python hỗ trợ type hints để giúp bạn xác định kiểu dữ liệu của các biến, tham số và giá trị trả về, giúp mã dễ đọc và dễ bảo trì hơn.\n\n7. **Functional Programming**: Tìm hiểu về các khái niệm lập trình hàm trong Python, như higher-order functions, lambda functions, và các hàm trong module `functools`.\n\nBạn có thể bắt đầu với một trong những khái niệm này và dần dần mở rộng kiến thức của mình. Nếu bạn cần tài liệu hoặc ví dụ cụ thể cho bất kỳ khái niệm nào, hãy cho tôi biết!",
+          "timestamp": "2026-04-24T12:54:31"
+        },
+        {
+          "turn": 2,
+          "role": "user",
+          "content": "Tôi đã quen với OOP rồi.",
+          "timestamp": "2026-04-24T12:54:39"
+        },
+        {
+          "turn": 2,
+          "role": "assistant",
+          "content": "Tuyệt vời! Nếu bạn đã quen với lập trình hướng đối tượng (OOP), bạn có thể mở rộng kiến thức của mình bằng cách tìm hiểu các khái niệm nâng cao hơn trong OOP, chẳng hạn như:\n\n1. **Inheritance và Polymorphism**: Tìm hiểu cách sử dụng kế thừa để tạo ra các lớp con và cách sử dụng polymorphism để cho phép các đối tượng khác nhau phản hồi theo cách khác nhau cho cùng một phương thức.\n\n2. **Abstract Classes và Interfaces**: Khám phá cách sử dụng các lớp trừu tượng và giao diện để định nghĩa các phương thức mà các lớp con phải triển khai.\n\n3. **Composition vs. Inheritance**: Hiểu sự khác biệt giữa việc sử dụng kế thừa và thành phần (composition) để xây dựng các lớp, và khi nào nên sử dụng mỗi phương pháp.\n\n4. **Method Resolution Order (MRO)**: Tìm hiểu cách Python xác định thứ tự gọi phương thức trong trường hợp có nhiều lớp cha (multiple inheritance).\n\n5. **Dunder Methods**: Khám phá các phương thức đặc biệt (dunder methods) như `__init__`, `__str__`, `__repr__`, và `__len__` để tùy chỉnh hành vi của các đối tượng.\n\n6. **Design Patterns**: Nghiên cứu các mẫu thiết kế (design patterns) phổ biến trong OOP như Singleton, Factory, Observer, và Strategy để cải thiện kiến trúc mã của bạn.\n\n7. **Mixins**: Tìm hiểu về mixins, một cách để thêm chức năng cho các lớp mà không cần kế thừa từ một lớp cha cụ thể.\n\nNếu bạn muốn đi sâu vào bất kỳ khái niệm nào trong số này hoặc cần ví dụ cụ thể, hãy cho tôi biết!",
+          "timestamp": "2026-04-24T12:54:39"
+        }
+      ],
+      "probe": {
+        "question": "Decorator trong Python là gì và dùng như thế nào?",
+        "no_memory_response": {
+          "content": "Decorator trong Python là một công cụ cho phép bạn thay đổi hoặc mở rộng hành vi của một hàm, phương thức hoặc lớp mà không cần phải thay đổi mã nguồn của chúng. Decorator thường được sử dụng để thêm các tính năng như ghi log, kiểm tra quyền truy cập, hoặc thực hiện các thao tác trước và sau khi gọi hàm.\n\n### Cách hoạt động của Decorator\n\nMột decorator là một hàm nhận một hàm khác làm đối số và trả về một hàm mới. Cú pháp sử dụng decorator thường là:\n\n```python\n@tên_decorator\ndef hàm_cần_decorator():\n    # Thân hàm\n```\n\n### Ví dụ đơn giản về Decorator\n\nDưới đây là một ví dụ đơn giản về cách tạo và sử dụng decorator:\n\n```python\ndef my_decorator(func):\n    def wrapper():\n        print(\"Trước khi gọi hàm.\")\n        func()\n        print(\"Sau khi gọi hàm.\")\n    return wrapper\n\n@my_decorator\ndef say_hello():\n    print(\"Xin chào!\")\n\n# Gọi hàm đã được trang trí\nsay_hello()\n```\n\n### Kết quả\n\nKhi bạn gọi `say_hello()`, đầu ra sẽ là:\n\n```\nTrước khi gọi hàm.\nXin chào!\nSau khi gọi hàm.\n```\n\n### Giải thích\n\n1. **Định nghĩa Decorator**: `my_decorator` là một hàm nhận một hàm `func` làm đối số. Bên trong nó, chúng ta định nghĩa một hàm `wrapper` mà sẽ thực hiện các thao tác trước và sau khi gọi `func`.\n\n2. **Sử dụng Decorator**: Khi bạn sử dụng `@my_decorator` trước hàm `say_hello`, Python sẽ tự động gọi `my_decorator(say_hello)` và thay thế `say_hello` bằng hàm `wrapper`.\n\n### Decorator với đối số\n\nNếu bạn muốn tạo một decorator có thể nhận đối số, bạn có thể làm như sau:\n\n```python\ndef repeat(num_times):\n    def decorator_repeat(func):\n        def wrapper(*args, **kwargs):\n            for _ in range(num_times):\n                func(*args, **kwargs)\n        return wrapper\n    return decorator_repeat\n\n@repeat(3)\ndef greet(name):\n    print(f\"Xin chào, {name}!\")\n\ngreet(\"Alice\")\n```\n\n### Kết quả\n\nKhi bạn gọi `greet(\"Alice\")`, đầu ra sẽ là:\n\n```\nXin chào, Alice!\nXin chào, Alice!\nXin chào, Alice!\n```\n\n### Kết luận\n\nDecorator là một công cụ mạnh mẽ trong Python cho phép bạn mở rộng và thay đổi hành vi của các hàm một cách linh hoạt và dễ dàng. Chúng rất hữu ích trong việc tổ chức mã và tái sử dụng các tính năng chung.",
+          "word_count": 363
+        },
+        "with_memory_response": {
+          "content": "Decorator trong Python là một hàm nhận một hàm khác làm đối số và trả về một hàm mới. Decorators cho phép bạn thêm chức năng cho các hàm mà không cần thay đổi mã nguồn của chúng. Chúng thường được sử dụng để thực hiện các tác vụ như logging, kiểm tra quyền truy cập, hoặc caching.\n\n### Cú pháp\n\nCú pháp để sử dụng decorator là sử dụng ký hiệu `@decorator_name` trước định nghĩa của hàm mà bạn muốn trang trí. Dưới đây là một ví dụ đơn giản:\n\n### Ví dụ\n\n```python\ndef my_decorator(func):\n    def wrapper():\n        print(\"Something is happening before the function is called.\")\n        func()\n        print(\"Something is happening after the function is called.\")\n    return wrapper\n\n@my_decorator\ndef say_hello():\n    print(\"Hello!\")\n\nsay_hello()\n```\n\n### Kết quả\n\nKhi bạn gọi `say_hello()`, đầu ra sẽ là:\n\n```\nSomething is happening before the function is called.\nHello!\nSomething is happening after the function is called.\n```\n\n### Giải thích\n\n1. **Hàm Decorator**: `my_decorator` là một hàm nhận một hàm khác (`func`) làm đối số.\n2. **Hàm Wrapper**: Bên trong `my_decorator`, có một hàm con `wrapper` thực hiện các tác vụ trước và sau khi gọi hàm gốc.\n3. **Trả về**: `my_decorator` trả về hàm `wrapper`, và khi bạn sử dụng `@my_decorator`, hàm `say_hello` sẽ được thay thế bằng `wrapper`.\n\n### Sử dụng với Tham số\n\nNếu hàm bạn muốn trang trí có tham số, bạn có thể điều chỉnh hàm wrapper như sau:\n\n```python\ndef my_decorator(func):\n    def wrapper(*args, **kwargs):\n        print(\"Something is happening before the function is called.\")\n        result = func(*args, **kwargs)\n        print(\"Something is happening after the function is called.\")\n        return result\n    return wrapper\n\n@my_decorator\ndef say_hello(name):\n    print(f\"Hello, {name}!\")\n\nsay_hello(\"Alice\")\n```\n\n### Kết quả\n\n```\nSomething is happening before the function is called.\nHello, Alice!\nSomething is happening after the function is called.\n```\n\n### Kết luận\n\nDecorators là một công cụ mạnh mẽ trong Python cho phép bạn mở rộng chức năng của các hàm một cách linh hoạt. Nếu bạn muốn tìm hiểu thêm về cách sử dụng decorators trong các tình huống cụ thể hoặc cần ví dụ phức tạp hơn, hãy cho tôi biết!",
+          "word_count": 355
+        }
+      },
+      "result": {
+        "passed": true,
+        "expected_keywords": [
+          "decorator",
+          "@",
+          "hàm",
+          "logging",
+          "property"
+        ],
+        "pass_condition": "any"
+      }
+    },
+    {
+      "scenario_id": 5,
+      "description": "Recall user job title after context switch",
+      "category": "profile_recall",
+      "started_at": "2026-04-24T12:54:59",
+      "finished_at": "2026-04-24T12:55:36",
+      "setup_turns": [
+        {
+          "turn": 1,
+          "role": "user",
+          "content": "Tôi là backend developer, chuyên về Python và FastAPI.",
+          "timestamp": "2026-04-24T12:55:01"
+        },
+        {
+          "turn": 1,
+          "role": "assistant",
+          "content": "Rất tuyệt! Với kinh nghiệm của bạn về Python và FastAPI, bạn có thể xây dựng các REST API hiệu suất cao một cách dễ dàng. Nếu bạn cần hỗ trợ về bất kỳ vấn đề nào liên quan đến FastAPI, Python, hoặc các công nghệ khác, hãy cho tôi biết nhé!",
+          "timestamp": "2026-04-24T12:55:01"
+        },
+        {
+          "turn": 2,
+          "role": "user",
+          "content": "Gần đây tôi đang tìm hiểu về microservices.",
+          "timestamp": "2026-04-24T12:55:06"
+        },
+        {
+          "turn": 2,
+          "role": "assistant",
+          "content": "Microservices là một kiến trúc rất thú vị và mạnh mẽ cho việc phát triển ứng dụng. Với nền tảng của bạn về Python và FastAPI, bạn có thể dễ dàng xây dựng các dịch vụ nhỏ gọn, độc lập và có thể triển khai riêng biệt. \n\nNếu bạn cần tìm hiểu về cách thiết kế microservices, giao tiếp giữa các dịch vụ, hoặc các công cụ hỗ trợ như Docker, Kubernetes, hoặc API Gateway, hãy cho tôi biết!",
+          "timestamp": "2026-04-24T12:55:06"
+        },
+        {
+          "turn": 3,
+          "role": "user",
+          "content": "API Gateway là gì?",
+          "timestamp": "2026-04-24T12:55:13"
+        },
+        {
+          "turn": 3,
+          "role": "assistant",
+          "content": "API Gateway là một thành phần quan trọng trong kiến trúc microservices, đóng vai trò như một điểm truy cập duy nhất cho tất cả các dịch vụ trong hệ thống. Nó giúp quản lý và điều phối các yêu cầu từ client đến các microservices khác nhau. Dưới đây là một số chức năng chính của API Gateway:\n\n1. **Routing**: Chuyển tiếp yêu cầu đến dịch vụ phù hợp dựa trên URL hoặc các thông tin khác trong yêu cầu.\n\n2. **Authentication và Authorization**: Xác thực người dùng và kiểm tra quyền truy cập trước khi cho phép truy cập vào các dịch vụ.\n\n3. **Load Balancing**: Phân phối tải giữa các instance của dịch vụ để đảm bảo hiệu suất và độ tin cậy.\n\n4. **Caching**: Lưu trữ tạm thời các phản hồi từ dịch vụ để giảm thiểu số lượng yêu cầu đến dịch vụ và cải thiện tốc độ phản hồi.\n\n5. **Rate Limiting**: Giới hạn số lượng yêu cầu mà một client có thể gửi trong một khoảng thời gian nhất định để bảo vệ dịch vụ khỏi quá tải.\n\n6. **Logging và Monitoring**: Ghi lại các yêu cầu và phản hồi để theo dõi hiệu suất và phát hiện lỗi.\n\nMột số công cụ phổ biến cho API Gateway bao gồm Kong, NGINX, và AWS API Gateway. Nếu bạn cần thêm thông tin hoặc hướng dẫn cụ thể về cách triển khai API Gateway trong dự án của mình, hãy cho tôi biết!",
+          "timestamp": "2026-04-24T12:55:13"
+        },
+        {
+          "turn": 4,
+          "role": "user",
+          "content": "Load balancing hoạt động như thế nào?",
+          "timestamp": "2026-04-24T12:55:23"
+        },
+        {
+          "turn": 4,
+          "role": "assistant",
+          "content": "Load balancing là một kỹ thuật phân phối tải giữa nhiều server hoặc dịch vụ để đảm bảo rằng không có một server nào bị quá tải, từ đó cải thiện hiệu suất và độ tin cậy của ứng dụng. Dưới đây là cách hoạt động của load balancing:\n\n1. **Phân phối yêu cầu**: Khi một client gửi yêu cầu đến ứng dụng, yêu cầu này sẽ được gửi đến một load balancer (bộ cân bằng tải). Load balancer sẽ quyết định server nào sẽ xử lý yêu cầu dựa trên một số thuật toán.\n\n2. **Thuật toán cân bằng tải**: Có nhiều thuật toán khác nhau để phân phối tải, bao gồm:\n   - **Round Robin**: Gửi yêu cầu đến từng server theo thứ tự.\n   - **Least Connections**: Gửi yêu cầu đến server có ít kết nối hiện tại nhất.\n   - **IP Hash**: Sử dụng địa chỉ IP của client để xác định server nào sẽ xử lý yêu cầu.\n   - **Random**: Chọn ngẫu nhiên một server để xử lý yêu cầu.\n\n3. **Health Checks**: Load balancer thường thực hiện kiểm tra sức khỏe (health checks) để đảm bảo rằng các server đang hoạt động bình thường. Nếu một server không phản hồi hoặc gặp sự cố, load balancer sẽ ngừng gửi yêu cầu đến server đó cho đến khi nó hoạt động trở lại.\n\n4. **Tăng cường khả năng mở rộng**: Khi cần mở rộng ứng dụng, bạn có thể thêm nhiều server vào hệ thống mà không cần thay đổi cách client gửi yêu cầu. Load balancer sẽ tự động phân phối tải đến các server mới.\n\n5. **Cải thiện độ tin cậy**: Nếu một server gặp sự cố, load balancer có thể chuyển hướng yêu cầu đến các server khác, giúp duy trì tính khả dụng của ứng dụng.\n\nLoad balancing có thể được thực hiện ở nhiều cấp độ khác nhau, bao gồm:\n- **Layer 4 (Transport Layer)**: Cân bằng tải dựa trên thông tin trong gói tin TCP/UDP.\n- **Layer 7 (Application Layer)**: Cân bằng tải dựa trên thông tin trong nội dung của yêu cầu HTTP.\n\nNếu bạn đang triển khai microservices với FastAPI, bạn có thể sử dụng các giải pháp như NGINX hoặc HAProxy để thực hiện load balancing. Nếu bạn cần thêm thông tin hoặc hướng dẫn cụ thể, hãy cho tôi biết!",
+          "timestamp": "2026-04-24T12:55:23"
+        },
+        {
+          "turn": 5,
+          "role": "user",
+          "content": "Kubernetes có phức tạp không?",
+          "timestamp": "2026-04-24T12:55:32"
+        },
+        {
+          "turn": 5,
+          "role": "assistant",
+          "content": "Kubernetes có thể được coi là phức tạp, đặc biệt là nếu bạn mới bắt đầu làm quen với nó. Tuy nhiên, sự phức tạp này đến từ khả năng mạnh mẽ và linh hoạt mà nó cung cấp cho việc quản lý container và microservices. Dưới đây là một số điểm cần xem xét:\n\n1. **Khái niệm cơ bản**: Kubernetes có nhiều khái niệm và thành phần như Pods, Services, Deployments, ReplicaSets, và Namespaces. Việc hiểu rõ các khái niệm này là rất quan trọng để sử dụng Kubernetes hiệu quả.\n\n2. **Cấu hình**: Việc cấu hình Kubernetes có thể phức tạp, đặc biệt là khi bạn cần thiết lập các file YAML cho các tài nguyên khác nhau. Tuy nhiên, một khi bạn quen thuộc với cú pháp và cấu trúc, việc này sẽ trở nên dễ dàng hơn.\n\n3. **Quản lý trạng thái**: Kubernetes quản lý trạng thái của các ứng dụng container hóa, điều này có thể yêu cầu bạn hiểu rõ về cách Kubernetes theo dõi và duy trì trạng thái mong muốn của ứng dụng.\n\n4. **Hệ sinh thái phong phú**: Kubernetes có một hệ sinh thái phong phú với nhiều công cụ và tiện ích mở rộng, như Helm (quản lý gói), Istio (quản lý dịch vụ), và Prometheus (giám sát). Việc làm quen với các công cụ này có thể làm tăng độ phức tạp.\n\n5. **Tài liệu và cộng đồng**: Mặc dù Kubernetes có thể phức tạp, nhưng nó cũng có tài liệu phong phú và một cộng đồng lớn hỗ trợ. Bạn có thể tìm thấy nhiều hướng dẫn, bài viết và video để giúp bạn học hỏi.\n\nNếu bạn đã có kinh nghiệm với Docker và microservices, việc học Kubernetes sẽ dễ dàng hơn. Bạn có thể bắt đầu với các dự án nhỏ để làm quen với các khái niệm và dần dần mở rộng quy mô khi bạn cảm thấy tự tin hơn. Nếu bạn cần hướng dẫn cụ thể hoặc tài nguyên học tập, hãy cho tôi biết!",
+          "timestamp": "2026-04-24T12:55:32"
+        }
+      ],
+      "probe": {
+        "question": "Nghề nghiệp của tôi là gì?",
+        "no_memory_response": {
+          "content": "Tôi không có thông tin cụ thể về bạn, vì vậy tôi không thể biết nghề nghiệp của bạn là gì. Tuy nhiên, nếu bạn muốn chia sẻ một số thông tin về sở thích, kỹ năng hoặc lĩnh vực bạn đang làm việc, tôi có thể giúp bạn xác định hoặc thảo luận về nghề nghiệp của bạn!",
+          "word_count": 59
+        },
+        "with_memory_response": {
+          "content": "Bạn là một backend developer, chuyên về Python và FastAPI. Nếu bạn cần hỗ trợ hoặc có câu hỏi nào liên quan đến lĩnh vực của mình, hãy cho tôi biết nhé!",
+          "word_count": 32
+        }
+      },
+      "result": {
+        "passed": true,
+        "expected_keywords": [
+          "backend",
+          "developer",
+          "fastapi",
+          "python"
+        ],
+        "pass_condition": "any"
+      }
+    },
+    {
+      "scenario_id": 6,
+      "description": "Multi-fact recall: name, age, job, allergy",
+      "category": "profile_recall",
+      "started_at": "2026-04-24T12:55:36",
+      "finished_at": "2026-04-24T12:56:03",
+      "setup_turns": [
+        {
+          "turn": 1,
+          "role": "user",
+          "content": "Tôi tên là Nam, năm nay 25 tuổi.",
+          "timestamp": "2026-04-24T12:55:41"
+        },
+        {
+          "turn": 1,
+          "role": "assistant",
+          "content": "Chào Nam! Rất vui được biết bạn. Nếu bạn cần hỗ trợ gì, hãy cho tôi biết nhé!",
+          "timestamp": "2026-04-24T12:55:41"
+        },
+        {
+          "turn": 2,
+          "role": "user",
+          "content": "Tôi làm data scientist tại Hà Nội.",
+          "timestamp": "2026-04-24T12:55:46"
+        },
+        {
+          "turn": 2,
+          "role": "assistant",
+          "content": "Thật tuyệt vời, Nam! Làm data scientist tại Hà Nội chắc hẳn bạn có nhiều trải nghiệm thú vị trong lĩnh vực dữ liệu. Nếu bạn cần thảo luận về các công nghệ, công cụ hay dự án nào đó, hãy cho tôi biết nhé!",
+          "timestamp": "2026-04-24T12:55:46"
+        },
+        {
+          "turn": 3,
+          "role": "user",
+          "content": "Tôi bị dị ứng với hải sản.",
+          "timestamp": "2026-04-24T12:55:48"
+        },
+        {
+          "turn": 3,
+          "role": "assistant",
+          "content": "Cảm ơn bạn đã chia sẻ, Nam! Dị ứng với hải sản có thể gây khó khăn trong việc chọn lựa thực phẩm. Nếu bạn cần gợi ý về món ăn hoặc nhà hàng nào đó không có hải sản, hãy cho tôi biết nhé!",
+          "timestamp": "2026-04-24T12:55:48"
+        },
+        {
+          "turn": 4,
+          "role": "user",
+          "content": "Bạn có thể giải thích machine learning không?",
+          "timestamp": "2026-04-24T12:55:58"
+        },
+        {
+          "turn": 4,
+          "role": "assistant",
+          "content": "Chắc chắn rồi, Nam! Machine learning (học máy) là một lĩnh vực con của trí tuệ nhân tạo (AI) mà cho phép máy tính học hỏi từ dữ liệu mà không cần phải lập trình rõ ràng cho từng nhiệm vụ. \n\nCó ba loại chính của machine learning:\n\n1. **Học có giám sát (Supervised Learning)**: Trong phương pháp này, mô hình được huấn luyện trên một tập dữ liệu đã được gán nhãn. Ví dụ, nếu bạn muốn dự đoán giá nhà, bạn sẽ sử dụng dữ liệu về các đặc điểm của nhà (diện tích, số phòng, vị trí,...) và giá thực tế của chúng để huấn luyện mô hình.\n\n2. **Học không giám sát (Unsupervised Learning)**: Ở đây, mô hình làm việc với dữ liệu không có nhãn. Mục tiêu là tìm ra cấu trúc hoặc mẫu trong dữ liệu. Ví dụ, phân cụm (clustering) là một kỹ thuật phổ biến trong học không giám sát, nơi mô hình nhóm các điểm dữ liệu tương tự lại với nhau.\n\n3. **Học tăng cường (Reinforcement Learning)**: Trong phương pháp này, mô hình học hỏi thông qua việc tương tác với môi trường và nhận phản hồi dưới dạng phần thưởng hoặc hình phạt. Mục tiêu là tối ưu hóa hành động để đạt được phần thưởng cao nhất.\n\nMachine learning có ứng dụng rộng rãi trong nhiều lĩnh vực như nhận diện hình ảnh, xử lý ngôn ngữ tự nhiên, dự đoán tài chính, và nhiều hơn nữa. Nếu bạn muốn tìm hiểu sâu hơn về một khía cạnh nào đó, hãy cho tôi biết!",
+          "timestamp": "2026-04-24T12:55:58"
+        }
+      ],
+      "probe": {
+        "question": "Bạn biết gì về tôi? Hãy liệt kê các thông tin bạn nhớ.",
+        "no_memory_response": {
+          "content": "Xin lỗi, nhưng tôi không có khả năng nhớ thông tin cá nhân của bạn hoặc bất kỳ ai khác. Mỗi lần bạn tương tác với tôi, tôi không lưu trữ thông tin từ các cuộc trò chuyện trước đó. Tôi chỉ có thể cung cấp thông tin và hỗ trợ dựa trên những gì bạn hỏi trong cuộc trò chuyện hiện tại. Nếu bạn có câu hỏi hoặc cần trợ giúp về một chủ đề nào đó, hãy cho tôi biết!",
+          "word_count": 82
+        },
+        "with_memory_response": {
+          "content": "Dưới đây là những thông tin mà tôi nhớ về bạn, Nam:\n\n- Tên: Nam\n- Tuổi: 25\n- Nghề nghiệp: Data scientist\n- Địa điểm: Hà Nội\n- Dị ứng: Hải sản\n\nNếu có điều gì bạn muốn cập nhật hoặc thêm vào, hãy cho tôi biết nhé!",
+          "word_count": 49
+        }
+      },
+      "result": {
+        "passed": true,
+        "expected_keywords": [
+          "Nam",
+          "25",
+          "data",
+          "hải sản"
+        ],
+        "pass_condition": "any"
+      }
+    },
+    {
+      "scenario_id": 7,
+      "description": "Recall previous ML project outcome",
+      "category": "episodic_recall",
+      "started_at": "2026-04-24T12:56:03",
+      "finished_at": "2026-04-24T12:56:57",
+      "setup_turns": [
+        {
+          "turn": 1,
+          "role": "user",
+          "content": "Tôi đang xây dựng model phân tích sentiment cho review sản phẩm.",
+          "timestamp": "2026-04-24T12:56:10"
+        },
+        {
+          "turn": 1,
+          "role": "assistant",
+          "content": "Để xây dựng model phân tích sentiment cho review sản phẩm, bạn có thể thực hiện các bước sau:\n\n1. **Thu thập dữ liệu**: Tìm kiếm và thu thập dữ liệu review sản phẩm từ các nguồn như Amazon, Yelp, hoặc các trang web khác. Dữ liệu nên bao gồm cả văn bản review và nhãn sentiment (ví dụ: tích cực, tiêu cực, trung lập).\n\n2. **Tiền xử lý dữ liệu**: Làm sạch và chuẩn hóa dữ liệu. Các bước có thể bao gồm:\n   - Xóa bỏ ký tự đặc biệt, số, và các từ không cần thiết.\n   - Chuyển đổi văn bản về dạng chữ thường.\n   - Sử dụng tokenization để tách văn bản thành các từ hoặc cụm từ.\n   - Áp dụng stemming hoặc lemmatization để giảm từ về dạng gốc.\n\n3. **Chọn mô hình**: Bạn có thể sử dụng các mô hình học máy như:\n   - Logistic Regression\n   - Naive Bayes\n   - Support Vector Machines (SVM)\n   - Mô hình học sâu như LSTM hoặc BERT cho các tác vụ phân tích sentiment.\n\n4. **Huấn luyện mô hình**: Sử dụng tập dữ liệu đã được tiền xử lý để huấn luyện mô hình. Chia dữ liệu thành tập huấn luyện và tập kiểm tra để đánh giá hiệu suất của mô hình.\n\n5. **Đánh giá mô hình**: Sử dụng các chỉ số như accuracy, precision, recall, và F1-score để đánh giá hiệu suất của mô hình trên tập kiểm tra.\n\n6. **Triển khai mô hình**: Sau khi mô hình đã được huấn luyện và đánh giá, bạn có thể triển khai nó dưới dạng một API sử dụng FastAPI. Điều này cho phép bạn gửi các review mới và nhận lại dự đoán sentiment.\n\n7. **Bảo trì và cải thiện**: Theo dõi hiệu suất của mô hình trong thực tế và cập nhật nó khi cần thiết với dữ liệu mới hoặc cải tiến thuật toán.\n\nNếu bạn cần thêm thông tin chi tiết về bất kỳ bước nào, hãy cho tôi biết!",
+          "timestamp": "2026-04-24T12:56:10"
+        },
+        {
+          "turn": 2,
+          "role": "user",
+          "content": "Model BERT của tôi đạt accuracy 87% trên test set.",
+          "timestamp": "2026-04-24T12:56:19"
+        },
+        {
+          "turn": 2,
+          "role": "assistant",
+          "content": "Chúc mừng bạn với kết quả accuracy 87% trên test set cho model BERT của bạn! Đây là một kết quả khá tốt cho bài toán phân tích sentiment. Dưới đây là một số gợi ý để bạn có thể cải thiện hơn nữa hoặc khai thác mô hình của mình:\n\n1. **Tuning Hyperparameters**: Thử nghiệm với các hyperparameters khác nhau như learning rate, batch size, và số epoch để xem liệu có thể cải thiện độ chính xác không.\n\n2. **Data Augmentation**: Nếu bạn có thể, hãy thử tăng cường dữ liệu bằng cách tạo ra các biến thể của các review hiện có, điều này có thể giúp mô hình học tốt hơn.\n\n3. **Fine-tuning**: Nếu bạn chưa làm, hãy xem xét việc fine-tune mô hình BERT với một tập dữ liệu lớn hơn hoặc cụ thể hơn cho lĩnh vực của bạn.\n\n4. **Ensemble Methods**: Kết hợp nhiều mô hình khác nhau (ví dụ: BERT với Logistic Regression hoặc SVM) có thể giúp cải thiện độ chính xác tổng thể.\n\n5. **Phân tích lỗi**: Xem xét các trường hợp mà mô hình dự đoán sai để hiểu rõ hơn về những điểm yếu của nó. Điều này có thể giúp bạn cải thiện mô hình trong tương lai.\n\n6. **Triển khai và thu thập phản hồi**: Nếu bạn triển khai mô hình, hãy thu thập phản hồi từ người dùng để cải thiện mô hình dựa trên dữ liệu thực tế.\n\nNếu bạn cần thêm thông tin hoặc hỗ trợ về bất kỳ bước nào trong quá trình này, hãy cho tôi biết!",
+          "timestamp": "2026-04-24T12:56:19"
+        },
+        {
+          "turn": 3,
+          "role": "user",
+          "content": "Tôi quyết định deploy lên AWS Lambda.",
+          "timestamp": "2026-04-24T12:56:29"
+        },
+        {
+          "turn": 3,
+          "role": "assistant",
+          "content": "Triển khai mô hình BERT của bạn lên AWS Lambda là một lựa chọn tuyệt vời để tạo ra một API có thể mở rộng và tiết kiệm chi phí. Dưới đây là các bước cơ bản để bạn có thể thực hiện việc này:\n\n1. **Chuẩn bị Môi Trường**:\n   - Cài đặt AWS CLI và cấu hình với thông tin tài khoản AWS của bạn.\n   - Cài đặt các thư viện cần thiết như `boto3`, `transformers`, và `torch` (nếu bạn sử dụng PyTorch).\n\n2. **Tạo Lambda Function**:\n   - Đăng nhập vào AWS Management Console và điều hướng đến dịch vụ Lambda.\n   - Tạo một function mới và chọn \"Author from scratch\".\n   - Chọn runtime phù hợp (Python 3.x).\n\n3. **Chuẩn bị Mã Nguồn**:\n   - Viết mã Python để tải mô hình BERT và xử lý các yêu cầu. Dưới đây là một ví dụ đơn giản:\n\n   ```python\n   import json\n   from transformers import pipeline\n\n   # Tải mô hình BERT\n   sentiment_pipeline = pipeline(\"sentiment-analysis\")\n\n   def lambda_handler(event, context):\n       # Lấy review từ yêu cầu\n       review = event['body']\n       \n       # Dự đoán sentiment\n       result = sentiment_pipeline(review)\n       \n       return {\n           'statusCode': 200,\n           'body': json.dumps(result)\n       }\n   ```\n\n4. **Đóng Gói Mã Nguồn**:\n   - Tạo một file zip chứa mã nguồn và tất cả các thư viện cần thiết. Bạn có thể sử dụng `pip` để cài đặt các thư viện vào một thư mục tạm thời và sau đó nén chúng lại.\n\n   ```bash\n   mkdir package\n   pip install transformers torch -t package/\n   cp your_lambda_function.py package/\n   cd package\n   zip -r ../lambda_function.zip .\n   ```\n\n5. **Tải Lên Lambda**:\n   - Quay lại AWS Lambda và tải file zip bạn vừa tạo lên.\n\n6. **Cấu Hình API Gateway**:\n   - Tạo một API Gateway để kết nối với Lambda function của bạn. Điều này cho phép bạn gửi yêu cầu HTTP đến Lambda.\n   - Chọn \"Create API\" và làm theo hướng dẫn để tạo một REST API.\n   - Kết nối API với Lambda function của bạn.\n\n7. **Kiểm Tra**:\n   - Sau khi hoàn tất, bạn có thể gửi yêu cầu đến API Gateway và kiểm tra xem mô hình có hoạt động như mong đợi không.\n\n8. **Giám sát và Bảo trì**:\n   - Sử dụng CloudWatch để theo dõi logs và hiệu suất của Lambda function.\n\nNếu bạn cần thêm thông tin chi tiết về bất kỳ bước nào hoặc gặp khó khăn trong quá trình triển khai, hãy cho tôi biết!",
+          "timestamp": "2026-04-24T12:56:29"
+        },
+        {
+          "turn": 4,
+          "role": "user",
+          "content": "Deploy thành công, hệ thống đang chạy ổn định.",
+          "timestamp": "2026-04-24T12:56:38"
+        },
+        {
+          "turn": 4,
+          "role": "assistant",
+          "content": "Tuyệt vời! Chúc mừng bạn đã triển khai thành công mô hình BERT lên AWS Lambda và hệ thống đang hoạt động ổn định. Đây là một bước quan trọng trong việc đưa sản phẩm của bạn đến tay người dùng. \n\nDưới đây là một số gợi ý để bạn có thể tối ưu hóa và phát triển hệ thống của mình hơn nữa:\n\n1. **Giám sát và Logging**: Sử dụng AWS CloudWatch để theo dõi hiệu suất của Lambda function và ghi lại các logs. Điều này sẽ giúp bạn phát hiện và xử lý các vấn đề nhanh chóng.\n\n2. **Tối ưu hóa Chi phí**: Theo dõi mức sử dụng và chi phí của Lambda. Nếu bạn thấy rằng một số yêu cầu không cần thiết phải sử dụng mô hình nặng như BERT, hãy xem xét việc sử dụng các mô hình nhẹ hơn cho các tác vụ đơn giản.\n\n3. **Cải thiện API**: Nếu bạn chưa làm, hãy thêm các tính năng như xác thực người dùng, giới hạn tốc độ (rate limiting), và caching để cải thiện hiệu suất và bảo mật cho API của bạn.\n\n4. **Phản hồi từ người dùng**: Thu thập phản hồi từ người dùng để hiểu rõ hơn về cách họ sử dụng hệ thống và những cải tiến nào có thể được thực hiện.\n\n5. **Cập nhật mô hình**: Theo dõi hiệu suất của mô hình và cập nhật nó khi cần thiết với dữ liệu mới hoặc cải tiến thuật toán.\n\n6. **Mở rộng tính năng**: Cân nhắc việc mở rộng hệ thống với các tính năng mới như phân tích chi tiết hơn về sentiment, hoặc tích hợp với các dịch vụ khác để cung cấp giá trị gia tăng cho người dùng.\n\nNếu bạn cần thêm hỗ trợ hoặc có câu hỏi nào khác, đừng ngần ngại hỏi nhé!",
+          "timestamp": "2026-04-24T12:56:38"
+        },
+        {
+          "turn": 5,
+          "role": "user",
+          "content": "Bây giờ tôi muốn bắt đầu dự án mới về computer vision.",
+          "timestamp": "2026-04-24T12:56:47"
+        },
+        {
+          "turn": 5,
+          "role": "assistant",
+          "content": "Thật tuyệt vời khi bạn muốn bắt đầu một dự án mới về computer vision! Đây là một lĩnh vực rất thú vị và có nhiều ứng dụng thực tiễn. Dưới đây là một số bước cơ bản để bạn có thể bắt đầu:\n\n1. **Xác định Mục tiêu Dự án**:\n   - Bạn muốn giải quyết vấn đề gì trong lĩnh vực computer vision? Ví dụ: phân loại hình ảnh, phát hiện đối tượng, nhận diện khuôn mặt, hoặc phân đoạn hình ảnh.\n\n2. **Thu thập Dữ liệu**:\n   - Tìm kiếm và thu thập dữ liệu hình ảnh phù hợp với mục tiêu của bạn. Bạn có thể sử dụng các bộ dữ liệu công khai như CIFAR-10, COCO, hoặc ImageNet, hoặc tự thu thập dữ liệu từ các nguồn khác.\n\n3. **Tiền xử lý Dữ liệu**:\n   - Làm sạch và chuẩn hóa dữ liệu hình ảnh. Các bước có thể bao gồm:\n     - Thay đổi kích thước hình ảnh.\n     - Chuyển đổi màu sắc (RGB, grayscale).\n     - Áp dụng các kỹ thuật tăng cường dữ liệu (data augmentation) như xoay, lật, hoặc thay đổi độ sáng.\n\n4. **Chọn Mô hình**:\n   - Lựa chọn mô hình phù hợp cho bài toán của bạn. Một số mô hình phổ biến trong computer vision bao gồm:\n     - Convolutional Neural Networks (CNNs)\n     - ResNet, VGG, Inception cho phân loại hình ảnh.\n     - YOLO, SSD cho phát hiện đối tượng.\n     - U-Net cho phân đoạn hình ảnh.\n\n5. **Huấn luyện Mô hình**:\n   - Sử dụng tập dữ liệu đã được tiền xử lý để huấn luyện mô hình. Chia dữ liệu thành tập huấn luyện, tập kiểm tra và tập xác thực.\n\n6. **Đánh giá Mô hình**:\n   - Sử dụng các chỉ số như accuracy, precision, recall, và F1-score để đánh giá hiệu suất của mô hình trên tập kiểm tra.\n\n7. **Triển khai Mô hình**:\n   - Sau khi mô hình đã được huấn luyện và đánh giá, bạn có thể triển khai nó dưới dạng một API hoặc ứng dụng web. Bạn có thể sử dụng Flask, FastAPI hoặc các dịch vụ như AWS Lambda.\n\n8. **Bảo trì và Cải thiện**:\n   - Theo dõi hiệu suất của mô hình trong thực tế và cập nhật nó khi cần thiết với dữ liệu mới hoặc cải tiến thuật toán.\n\nNếu bạn cần thêm thông tin chi tiết về bất kỳ bước nào hoặc có câu hỏi cụ thể về dự án của bạn, hãy cho tôi biết!",
+          "timestamp": "2026-04-24T12:56:47"
+        }
+      ],
+      "probe": {
+        "question": "Dự án sentiment analysis của tôi kết quả như thế nào?",
+        "no_memory_response": {
+          "content": "Để đánh giá kết quả của dự án sentiment analysis của bạn, bạn cần xem xét một số yếu tố chính:\n\n1. **Độ chính xác (Accuracy)**: Tỷ lệ phần trăm dự đoán đúng so với tổng số dự đoán. Bạn có thể so sánh độ chính xác này với các mô hình khác hoặc với các tiêu chuẩn trong ngành.\n\n2. **Độ nhạy (Recall)**: Tỷ lệ giữa số lượng dự đoán đúng của một lớp (ví dụ: tích cực) so với tổng số thực tế của lớp đó. Điều này giúp bạn hiểu mô hình có khả năng phát hiện các trường hợp tích cực hay tiêu cực tốt không.\n\n3. **Độ đặc hiệu (Precision)**: Tỷ lệ giữa số lượng dự đoán đúng của một lớp so với tổng số dự đoán của lớp đó. Điều này cho thấy độ tin cậy của mô hình khi nó dự đoán một lớp cụ thể.\n\n4. **F1 Score**: Là trung bình điều hòa của độ chính xác và độ nhạy, giúp bạn có cái nhìn tổng quát hơn về hiệu suất của mô hình.\n\n5. **Ma trận nhầm lẫn (Confusion Matrix)**: Cung cấp cái nhìn chi tiết về số lượng dự đoán đúng và sai cho từng lớp, giúp bạn phân tích các lỗi mà mô hình gặp phải.\n\n6. **Phân tích lỗi**: Xem xét các trường hợp mà mô hình dự đoán sai để tìm hiểu nguyên nhân và cải thiện mô hình.\n\n7. **Đánh giá chất lượng dữ liệu**: Kiểm tra xem dữ liệu đầu vào có đủ đa dạng và đại diện cho các trường hợp thực tế không.\n\nNếu bạn có các số liệu cụ thể từ dự án của mình, tôi có thể giúp bạn phân tích và đưa ra nhận xét chi tiết hơn.",
+          "word_count": 298
+        },
+        "with_memory_response": {
+          "content": "Dự án sentiment analysis của bạn đã đạt được accuracy 87% trên test set, một kết quả khá tốt cho mô hình BERT mà bạn đã triển khai. Bạn đã thực hiện các bước từ thu thập dữ liệu, tiền xử lý, huấn luyện mô hình cho đến triển khai trên AWS Lambda, và hệ thống hiện đang hoạt động ổn định.\n\nNếu bạn muốn cải thiện mô hình hoặc khai thác kết quả, bạn có thể xem xét các gợi ý như tuning hyperparameters, fine-tuning mô hình, hoặc thu thập phản hồi từ người dùng để cải thiện hiệu suất. Nếu bạn có thêm câu hỏi hoặc cần hỗ trợ về các bước tiếp theo, hãy cho tôi biết!",
+          "word_count": 120
+        }
+      },
+      "result": {
+        "passed": true,
+        "expected_keywords": [
+          "87",
+          "bert",
+          "lambda",
+          "thành công",
+          "aws"
+        ],
+        "pass_condition": "any"
+      }
+    },
+    {
+      "scenario_id": 8,
+      "description": "Retrieve Docker networking FAQ chunk",
+      "category": "semantic_retrieval",
+      "started_at": "2026-04-24T12:56:57",
+      "finished_at": "2026-04-24T12:57:14",
+      "setup_turns": [
+        {
+          "turn": 1,
+          "role": "user",
+          "content": "Tôi đang học DevOps và container technology.",
+          "timestamp": "2026-04-24T12:56:59"
+        },
+        {
+          "turn": 1,
+          "role": "assistant",
+          "content": "Thật tuyệt vời! DevOps và công nghệ container là những lĩnh vực rất quan trọng trong phát triển phần mềm hiện đại. Bạn đã tìm hiểu về Docker và Docker Compose chưa? Nếu cần hỗ trợ hay có câu hỏi nào về chúng, hãy cho tôi biết nhé!",
+          "timestamp": "2026-04-24T12:56:59"
+        },
+        {
+          "turn": 2,
+          "role": "user",
+          "content": "Tôi hay dùng Docker Compose để chạy multi-container apps.",
+          "timestamp": "2026-04-24T12:57:03"
+        },
+        {
+          "turn": 2,
+          "role": "assistant",
+          "content": "Rất tốt! Docker Compose là một công cụ tuyệt vời để quản lý các ứng dụng đa container. Bạn có thường xuyên sử dụng các tính năng như định nghĩa mạng giữa các service không? Hoặc bạn có gặp khó khăn gì khi cấu hình Docker Compose không? Nếu có câu hỏi hay cần trợ giúp, tôi sẵn sàng hỗ trợ!",
+          "timestamp": "2026-04-24T12:57:03"
+        }
+      ],
+      "probe": {
+        "question": "Làm thế nào để các Docker container giao tiếp với nhau trong cùng một network?",
+        "no_memory_response": {
+          "content": "Để các Docker container giao tiếp với nhau trong cùng một network, bạn có thể thực hiện theo các bước sau:\n\n### Bước 1: Tạo một Docker Network\n\nTrước tiên, bạn cần tạo một network mà các container sẽ sử dụng để giao tiếp với nhau. Bạn có thể tạo một network bằng lệnh sau:\n\n```bash\ndocker network create my_network\n```\n\n### Bước 2: Chạy các Container trong cùng một Network\n\nKhi bạn chạy các container, hãy chỉ định network mà bạn đã tạo. Ví dụ:\n\n```bash\ndocker run -d --name container1 --network my_network my_image1\ndocker run -d --name container2 --network my_network my_image2\n```\n\n### Bước 3: Giao tiếp giữa các Container\n\nKhi các container đang chạy trong cùng một network, bạn có thể giao tiếp với nhau bằng cách sử dụng tên container như là hostname. Ví dụ, nếu bạn muốn container1 giao tiếp với container2, bạn có thể sử dụng tên `container2` trong mã nguồn của container1.\n\nVí dụ, nếu container1 cần gửi một yêu cầu HTTP đến container2, bạn có thể sử dụng địa chỉ:\n\n```\nhttp://container2:port\n```\n\n### Bước 4: Kiểm tra Kết nối\n\nBạn có thể kiểm tra kết nối giữa các container bằng cách sử dụng lệnh `docker exec` để vào một container và thử ping hoặc curl đến container khác:\n\n```bash\ndocker exec -it container1 ping container2\n```\n\nHoặc:\n\n```bash\ndocker exec -it container1 curl http://container2:port\n```\n\n### Lưu ý\n\n- Đảm bảo rằng các container đang chạy và không có firewall hoặc cấu hình mạng nào ngăn cản việc giao tiếp giữa chúng.\n- Nếu bạn không chỉ định network, Docker sẽ tự động gán các container vào network mặc định là `bridge`, nhưng việc tạo một network riêng sẽ giúp bạn quản lý tốt hơn.\n\nBằng cách làm theo các bước trên, bạn có thể dễ dàng thiết lập và quản lý giao tiếp giữa các Docker container trong cùng một network.",
+          "word_count": 321
+        },
+        "with_memory_response": {
+          "content": "Các Docker container có thể giao tiếp với nhau trong cùng một network bằng cách sử dụng tên service làm hostname. Khi bạn sử dụng Docker Compose, các service tự động nằm chung trong một network, vì vậy bạn chỉ cần sử dụng tên service để kết nối.\n\nVí dụ, nếu bạn có một service database tên là 'db', bạn có thể kết nối đến nó từ một service khác bằng cách sử dụng `host='db'` thay vì `host='localhost'`.\n\nNếu bạn muốn tạo một network thủ công, bạn có thể sử dụng lệnh sau:\n\n```bash\ndocker network create mynetwork\n```\n\nSau đó, khi chạy container, bạn có thể kết nối chúng vào network đó bằng cách sử dụng:\n\n```bash\ndocker run --network=mynetwork ...\n```\n\nNếu bạn cần thêm thông tin hoặc ví dụ cụ thể, hãy cho tôi biết!",
+          "word_count": 138
+        }
+      },
+      "result": {
+        "passed": true,
+        "expected_keywords": [
+          "service",
+          "network",
+          "hostname",
+          "compose",
+          "tên service"
+        ],
+        "pass_condition": "any"
+      }
+    },
+    {
+      "scenario_id": 9,
+      "description": "Token budget: profile survives after 10+ turns",
+      "category": "trim_budget",
+      "started_at": "2026-04-24T12:57:14",
+      "finished_at": "2026-04-24T12:58:59",
+      "setup_turns": [
+        {
+          "turn": 1,
+          "role": "user",
+          "content": "Tôi tên là Minh, tôi làm việc ở TP.HCM.",
+          "timestamp": "2026-04-24T12:57:16"
+        },
+        {
+          "turn": 1,
+          "role": "assistant",
+          "content": "Chào Minh! Rất vui được biết bạn. Bạn đang làm việc trong lĩnh vực gì ở TP.HCM?",
+          "timestamp": "2026-04-24T12:57:16"
+        },
+        {
+          "turn": 2,
+          "role": "user",
+          "content": "Câu hỏi 1: Python list vs tuple khác nhau như thế nào?",
+          "timestamp": "2026-04-24T12:57:25"
+        },
+        {
+          "turn": 2,
+          "role": "assistant",
+          "content": "List và tuple trong Python có một số điểm khác nhau chính:\n\n1. **Thay đổi (Mutability)**:\n   - **List**: Là kiểu dữ liệu có thể thay đổi (mutable), nghĩa là bạn có thể thêm, xóa hoặc thay đổi các phần tử trong list sau khi nó được tạo.\n   - **Tuple**: Là kiểu dữ liệu không thể thay đổi (immutable), nghĩa là một khi tuple được tạo, bạn không thể thay đổi, thêm hoặc xóa các phần tử của nó.\n\n2. **Cú pháp**:\n   - **List**: Được định nghĩa bằng dấu ngoặc vuông `[]`. Ví dụ: `my_list = [1, 2, 3]`.\n   - **Tuple**: Được định nghĩa bằng dấu ngoặc đơn `()`. Ví dụ: `my_tuple = (1, 2, 3)`.\n\n3. **Hiệu suất**:\n   - **List**: Thường chậm hơn tuple vì nó có khả năng thay đổi.\n   - **Tuple**: Nhanh hơn trong việc truy cập và sử dụng bộ nhớ ít hơn so với list.\n\n4. **Sử dụng**:\n   - **List**: Thích hợp cho các tập hợp dữ liệu có thể thay đổi, như danh sách các mục cần xử lý.\n   - **Tuple**: Thích hợp cho các tập hợp dữ liệu không thay đổi, như các giá trị cố định hoặc các nhóm dữ liệu mà bạn không muốn thay đổi.\n\nHy vọng điều này giúp bạn hiểu rõ hơn về sự khác biệt giữa list và tuple trong Python!",
+          "timestamp": "2026-04-24T12:57:25"
+        },
+        {
+          "turn": 3,
+          "role": "user",
+          "content": "Câu hỏi 2: Dictionary comprehension dùng như thế nào?",
+          "timestamp": "2026-04-24T12:57:32"
+        },
+        {
+          "turn": 3,
+          "role": "assistant",
+          "content": "Dictionary comprehension trong Python là một cách ngắn gọn và hiệu quả để tạo ra một dictionary mới từ một iterable (như list hoặc tuple) bằng cách sử dụng cú pháp tương tự như list comprehension. Cú pháp cơ bản của dictionary comprehension là:\n\n```python\n{key_expression: value_expression for item in iterable if condition}\n```\n\nTrong đó:\n- `key_expression` là biểu thức để tạo ra khóa cho dictionary.\n- `value_expression` là biểu thức để tạo ra giá trị tương ứng với khóa.\n- `iterable` là một iterable mà bạn muốn lặp qua.\n- `condition` là một điều kiện tùy chọn để lọc các phần tử.\n\n### Ví dụ:\n\n1. **Tạo một dictionary từ một list**:\n   ```python\n   numbers = [1, 2, 3, 4, 5]\n   squares = {n: n**2 for n in numbers}\n   print(squares)  # Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}\n   ```\n\n2. **Sử dụng điều kiện**:\n   ```python\n   numbers = [1, 2, 3, 4, 5]\n   even_squares = {n: n**2 for n in numbers if n % 2 == 0}\n   print(even_squares)  # Output: {2: 4, 4: 16}\n   ```\n\n3. **Tạo dictionary từ một list of tuples**:\n   ```python\n   items = [('apple', 1), ('banana', 2), ('cherry', 3)]\n   fruit_dict = {fruit: quantity for fruit, quantity in items}\n   print(fruit_dict)  # Output: {'apple': 1, 'banana': 2, 'cherry': 3}\n   ```\n\nDictionary comprehension giúp bạn viết mã ngắn gọn và dễ đọc hơn khi tạo ra các dictionary.",
+          "timestamp": "2026-04-24T12:57:32"
+        },
+        {
+          "turn": 4,
+          "role": "user",
+          "content": "Câu hỏi 3: Exception handling best practices là gì?",
+          "timestamp": "2026-04-24T12:57:44"
+        },
+        {
+          "turn": 4,
+          "role": "assistant",
+          "content": "Exception handling là một phần quan trọng trong lập trình Python để quản lý các lỗi và tình huống không mong muốn. Dưới đây là một số best practices cho exception handling:\n\n1. **Sử dụng `try` và `except` một cách hợp lý**:\n   - Chỉ bao quanh mã mà bạn nghĩ có thể gây ra lỗi trong khối `try`. Tránh việc bao quanh toàn bộ mã, vì điều này có thể che giấu lỗi khác.\n\n   ```python\n   try:\n       # Mã có thể gây ra lỗi\n   except SomeException as e:\n       # Xử lý lỗi\n   ```\n\n2. **Chỉ bắt các exception cụ thể**:\n   - Thay vì bắt tất cả các exception bằng `except Exception`, hãy chỉ bắt các exception cụ thể mà bạn dự đoán có thể xảy ra. Điều này giúp bạn dễ dàng xác định và xử lý các lỗi.\n\n   ```python\n   try:\n       # Mã có thể gây ra lỗi\n   except ValueError as e:\n       # Xử lý lỗi ValueError\n   ```\n\n3. **Sử dụng `finally` để dọn dẹp**:\n   - Nếu bạn cần thực hiện một số hành động dọn dẹp (như đóng tệp hoặc giải phóng tài nguyên), hãy sử dụng khối `finally`. Mã trong khối `finally` sẽ luôn được thực thi, bất kể có xảy ra lỗi hay không.\n\n   ```python\n   try:\n       # Mã có thể gây ra lỗi\n   except SomeException as e:\n       # Xử lý lỗi\n   finally:\n       # Dọn dẹp tài nguyên\n   ```\n\n4. **Ghi lại thông tin lỗi**:\n   - Sử dụng logging để ghi lại thông tin về lỗi thay vì chỉ in ra console. Điều này giúp bạn theo dõi và phân tích lỗi dễ dàng hơn.\n\n   ```python\n   import logging\n\n   try:\n       # Mã có thể gây ra lỗi\n   except SomeException as e:\n       logging.error(\"An error occurred: %s\", e)\n   ```\n\n5. **Tránh việc sử dụng `bare except`**:\n   - Tránh việc sử dụng `except:` mà không chỉ định loại exception. Điều này có thể dẫn đến việc bắt các lỗi không mong muốn và làm cho mã khó hiểu hơn.\n\n6. **Cung cấp thông tin hữu ích trong exception**:\n   - Khi tạo exception tùy chỉnh, hãy cung cấp thông tin rõ ràng và hữu ích để người dùng hoặc lập trình viên có thể hiểu nguyên nhân của lỗi.\n\n7. **Sử dụng `raise` để ném lại exception**:\n   - Nếu bạn không thể xử lý một exception, hãy sử dụng `raise` để ném lại exception đó, cho phép nó được xử lý ở cấp cao hơn.\n\n   ```python\n   try:\n       # Mã có thể gây ra lỗi\n   except SomeException as e:\n       # Xử lý một phần\n       raise  # Ném lại exception\n   ```\n\nBằng cách tuân theo những best practices này, bạn có thể viết mã Python an toàn và dễ bảo trì hơn.",
+          "timestamp": "2026-04-24T12:57:44"
+        },
+        {
+          "turn": 5,
+          "role": "user",
+          "content": "Câu hỏi 4: Virtual environment dùng để làm gì?",
+          "timestamp": "2026-04-24T12:57:54"
+        },
+        {
+          "turn": 5,
+          "role": "assistant",
+          "content": "Virtual environment (môi trường ảo) trong Python được sử dụng để tạo ra một không gian độc lập cho các dự án Python, giúp quản lý các thư viện và phụ thuộc mà không ảnh hưởng đến hệ thống Python toàn cục hoặc các dự án khác. Dưới đây là một số lý do chính để sử dụng virtual environment:\n\n1. **Quản lý phụ thuộc**:\n   - Mỗi dự án có thể có các phiên bản thư viện khác nhau. Virtual environment cho phép bạn cài đặt các thư viện cần thiết cho từng dự án mà không xung đột với các dự án khác.\n\n2. **Tránh xung đột phiên bản**:\n   - Khi làm việc với nhiều dự án, có thể xảy ra xung đột giữa các phiên bản thư viện. Virtual environment giúp bạn giữ cho các phiên bản thư viện riêng biệt cho từng dự án.\n\n3. **Dễ dàng chia sẻ và triển khai**:\n   - Khi bạn chia sẻ mã nguồn hoặc triển khai ứng dụng, bạn có thể dễ dàng tạo một file `requirements.txt` để liệt kê tất cả các thư viện cần thiết. Người khác có thể sử dụng file này để tạo môi trường ảo tương tự.\n\n4. **Bảo vệ hệ thống**:\n   - Sử dụng virtual environment giúp bảo vệ hệ thống Python toàn cục khỏi các thay đổi không mong muốn do cài đặt hoặc gỡ bỏ thư viện.\n\n5. **Thử nghiệm và phát triển**:\n   - Bạn có thể thử nghiệm các thư viện mới hoặc các phiên bản khác nhau mà không làm ảnh hưởng đến các dự án hiện tại.\n\n### Cách tạo và sử dụng virtual environment:\n\n1. **Cài đặt `venv`** (nếu chưa có):\n   ```bash\n   python -m pip install --user virtualenv\n   ```\n\n2. **Tạo một virtual environment**:\n   ```bash\n   python -m venv myenv\n   ```\n\n3. **Kích hoạt virtual environment**:\n   - Trên Windows:\n     ```bash\n     myenv\\Scripts\\activate\n     ```\n   - Trên macOS/Linux:\n     ```bash\n     source myenv/bin/activate\n     ```\n\n4. **Cài đặt thư viện trong môi trường ảo**:\n   ```bash\n   pip install package_name\n   ```\n\n5. **Gỡ bỏ virtual environment**:\n   - Khi không còn cần thiết, bạn có thể gỡ bỏ thư mục chứa virtual environment.\n\nSử dụng virtual environment là một thực hành tốt trong phát triển Python, giúp bạn quản lý các dự án một cách hiệu quả và an toàn hơn.",
+          "timestamp": "2026-04-24T12:57:54"
+        },
+        {
+          "turn": 6,
+          "role": "user",
+          "content": "Câu hỏi 5: pip install vs conda install khác nhau không?",
+          "timestamp": "2026-04-24T12:58:04"
+        },
+        {
+          "turn": 6,
+          "role": "assistant",
+          "content": "`pip install` và `conda install` là hai công cụ phổ biến để cài đặt thư viện trong Python, nhưng chúng có một số khác biệt quan trọng:\n\n### 1. **Nguồn gốc và quản lý môi trường**:\n- **pip**:\n  - Là công cụ cài đặt gói cho Python, được phát triển bởi Python Software Foundation.\n  - Chỉ cài đặt các gói Python từ PyPI (Python Package Index) và không quản lý môi trường ảo.\n  \n- **conda**:\n  - Là một công cụ quản lý gói và môi trường, được phát triển bởi Anaconda, Inc.\n  - Có thể cài đặt không chỉ các gói Python mà còn cả các gói từ các ngôn ngữ khác (như R, Ruby, Lua, v.v.) và quản lý môi trường ảo.\n\n### 2. **Cách cài đặt**:\n- **pip**:\n  - Cài đặt gói bằng cách sử dụng lệnh:\n    ```bash\n    pip install package_name\n    ```\n\n- **conda**:\n  - Cài đặt gói bằng cách sử dụng lệnh:\n    ```bash\n    conda install package_name\n    ```\n\n### 3. **Quản lý phụ thuộc**:\n- **pip**:\n  - Quản lý phụ thuộc dựa trên thông tin trong file `setup.py` của gói. Nếu có xung đột giữa các phiên bản, bạn có thể gặp khó khăn trong việc giải quyết.\n\n- **conda**:\n  - Quản lý phụ thuộc tốt hơn, vì nó sử dụng một hệ thống giải quyết phụ thuộc mạnh mẽ hơn. Conda có thể tự động tìm và cài đặt các phiên bản phù hợp của các gói và phụ thuộc.\n\n### 4. **Tốc độ cài đặt**:\n- **pip**:\n  - Thường cài đặt gói từ mã nguồn, có thể mất thời gian hơn, đặc biệt là với các gói có nhiều phụ thuộc.\n\n- **conda**:\n  - Thường cài đặt gói từ các tệp nhị phân đã được biên dịch sẵn, giúp cài đặt nhanh hơn.\n\n### 5. **Sử dụng trong môi trường ảo**:\n- **pip**:\n  - Thường được sử dụng trong các virtual environment được tạo bằng `venv` hoặc `virtualenv`.\n\n- **conda**:\n  - Có thể tạo và quản lý môi trường ảo bằng chính lệnh `conda`, giúp bạn dễ dàng chuyển đổi giữa các môi trường.\n\n### Kết luận:\n- Nếu bạn đang làm việc trong một môi trường Anaconda hoặc cần cài đặt các gói không phải Python, `conda` là lựa chọn tốt hơn.\n- Nếu bạn chỉ cần cài đặt các gói Python từ PyPI và không cần quản lý môi trường, `pip` là đủ.\n\nTùy thuộc vào nhu cầu cụ thể của bạn, bạn có thể chọn công cụ phù hợp để cài đặt gói.",
+          "timestamp": "2026-04-24T12:58:04"
+        },
+        {
+          "turn": 7,
+          "role": "user",
+          "content": "Câu hỏi 6: f-string là gì?",
+          "timestamp": "2026-04-24T12:58:14"
+        },
+        {
+          "turn": 7,
+          "role": "assistant",
+          "content": "F-string (formatted string literals) là một tính năng trong Python 3.6 và các phiên bản mới hơn, cho phép bạn định dạng chuỗi một cách dễ dàng và trực quan hơn. F-string được tạo ra bằng cách đặt chữ cái \"f\" hoặc \"F\" trước dấu nháy đơn hoặc nháy kép của chuỗi. \n\n### Cú pháp:\n```python\nf\"Chuỗi với giá trị: {biểu_thức}\"\n```\n\nTrong đó, `biểu_thức` có thể là bất kỳ biểu thức Python hợp lệ nào, và giá trị của nó sẽ được chèn vào vị trí đó trong chuỗi.\n\n### Ví dụ sử dụng f-string:\n\n1. **Chèn biến vào chuỗi**:\n   ```python\n   name = \"Minh\"\n   age = 25\n   greeting = f\"Xin chào, tôi là {name} và tôi {age} tuổi.\"\n   print(greeting)  # Output: Xin chào, tôi là Minh và tôi 25 tuổi.\n   ```\n\n2. **Chèn biểu thức**:\n   ```python\n   a = 5\n   b = 10\n   result = f\"Tổng của {a} và {b} là {a + b}.\"\n   print(result)  # Output: Tổng của 5 và 10 là 15.\n   ```\n\n3. **Định dạng số**:\n   ```python\n   pi = 3.14159\n   formatted_pi = f\"Giá trị của pi là {pi:.2f}.\"\n   print(formatted_pi)  # Output: Giá trị của pi là 3.14.\n   ```\n\n4. **Chèn giá trị từ dictionary**:\n   ```python\n   person = {\"name\": \"Minh\", \"age\": 25}\n   info = f\"Tên: {person['name']}, Tuổi: {person['age']}.\"\n   print(info)  # Output: Tên: Minh, Tuổi: 25.\n   ```\n\n### Ưu điểm của f-string:\n- **Dễ đọc**: Cú pháp rõ ràng và dễ hiểu, giúp mã nguồn trở nên dễ đọc hơn.\n- **Hiệu suất**: F-string nhanh hơn so với các phương pháp định dạng chuỗi khác như `str.format()` hoặc `%` formatting.\n- **Tính linh hoạt**: Cho phép chèn bất kỳ biểu thức Python nào, không chỉ là biến.\n\nF-string là một công cụ mạnh mẽ và tiện lợi để định dạng chuỗi trong Python, giúp bạn viết mã một cách hiệu quả hơn.",
+          "timestamp": "2026-04-24T12:58:14"
+        },
+        {
+          "turn": 8,
+          "role": "user",
+          "content": "Câu hỏi 7: Walrus operator (:=) dùng như thế nào?",
+          "timestamp": "2026-04-24T12:58:27"
+        },
+        {
+          "turn": 8,
+          "role": "assistant",
+          "content": "Walrus operator (toán tử walrus) trong Python, được giới thiệu trong phiên bản 3.8, cho phép bạn gán giá trị cho một biến trong khi vẫn sử dụng giá trị đó trong biểu thức. Cú pháp của walrus operator là `:=`.\n\n### Cách sử dụng walrus operator:\n\n1. **Gán giá trị và sử dụng trong cùng một biểu thức**:\n   - Thay vì phải gán giá trị cho một biến trong một dòng và sau đó sử dụng biến đó trong một dòng khác, bạn có thể làm cả hai trong một dòng.\n\n   ```python\n   # Ví dụ không sử dụng walrus operator\n   n = len(my_list)\n   if n > 0:\n       print(f\"List has {n} elements.\")\n\n   # Ví dụ sử dụng walrus operator\n   if (n := len(my_list)) > 0:\n       print(f\"List has {n} elements.\")\n   ```\n\n2. **Sử dụng trong vòng lặp**:\n   - Walrus operator rất hữu ích trong các vòng lặp, cho phép bạn gán và kiểm tra giá trị trong cùng một câu lệnh.\n\n   ```python\n   # Ví dụ không sử dụng walrus operator\n   line = input(\"Enter a line (or 'quit' to exit): \")\n   while line != 'quit':\n       print(f\"You entered: {line}\")\n       line = input(\"Enter a line (or 'quit' to exit): \")\n\n   # Ví dụ sử dụng walrus operator\n   while (line := input(\"Enter a line (or 'quit' to exit): \")) != 'quit':\n       print(f\"You entered: {line}\")\n   ```\n\n3. **Sử dụng trong danh sách comprehension**:\n   - Walrus operator có thể được sử dụng trong danh sách comprehension để gán giá trị cho biến và sử dụng nó trong cùng một biểu thức.\n\n   ```python\n   # Ví dụ không sử dụng walrus operator\n   results = []\n   for x in range(10):\n       if x % 2 == 0:\n           results.append(x)\n\n   # Ví dụ sử dụng walrus operator\n   results = [x for x in range(10) if (y := x % 2) == 0]\n   ```\n\n### Lợi ích của walrus operator:\n- **Giảm số dòng mã**: Giúp bạn viết mã ngắn gọn hơn bằng cách kết hợp gán và kiểm tra trong cùng một câu lệnh.\n- **Cải thiện hiệu suất**: Giảm thiểu việc tính toán lại giá trị, vì bạn chỉ tính toán một lần và sử dụng lại giá trị đã gán.\n\nWalrus operator là một công cụ hữu ích trong Python, giúp bạn viết mã hiệu quả và dễ đọc hơn.",
+          "timestamp": "2026-04-24T12:58:27"
+        },
+        {
+          "turn": 9,
+          "role": "user",
+          "content": "Câu hỏi 8: Type hints có bắt buộc không?",
+          "timestamp": "2026-04-24T12:58:35"
+        },
+        {
+          "turn": 9,
+          "role": "assistant",
+          "content": "Type hints (gợi ý kiểu) trong Python không phải là bắt buộc, mà là một tính năng tùy chọn được giới thiệu trong PEP 484. Chúng cho phép bạn chỉ định kiểu dữ liệu cho các biến, tham số của hàm và giá trị trả về của hàm, giúp cải thiện tính rõ ràng và dễ hiểu của mã nguồn.\n\n### Một số điểm quan trọng về type hints:\n\n1. **Không bắt buộc**:\n   - Bạn có thể viết mã Python mà không cần sử dụng type hints. Python vẫn sẽ hoạt động bình thường mà không có chúng.\n\n2. **Cải thiện khả năng đọc mã**:\n   - Type hints giúp người đọc mã hiểu rõ hơn về kiểu dữ liệu mà một hàm hoặc biến mong đợi, từ đó dễ dàng hơn trong việc bảo trì và phát triển mã.\n\n3. **Hỗ trợ công cụ**:\n   - Các công cụ phân tích mã tĩnh như `mypy` có thể sử dụng type hints để kiểm tra kiểu dữ liệu và phát hiện lỗi trước khi chạy mã, giúp giảm thiểu lỗi trong quá trình phát triển.\n\n4. **Cú pháp**:\n   - Type hints có thể được sử dụng cho biến, tham số hàm và giá trị trả về của hàm. Dưới đây là một số ví dụ:\n\n   ```python\n   # Gợi ý kiểu cho biến\n   age: int = 25\n\n   # Gợi ý kiểu cho tham số và giá trị trả về của hàm\n   def greet(name: str) -> str:\n       return f\"Hello, {name}!\"\n\n   # Gợi ý kiểu cho danh sách\n   from typing import List\n\n   def process_numbers(numbers: List[int]) -> List[int]:\n       return [n * 2 for n in numbers]\n   ```\n\n5. **Tính linh hoạt**:\n   - Python vẫn cho phép bạn sử dụng kiểu dữ liệu động, vì vậy bạn có thể thay đổi kiểu dữ liệu của biến mà không gặp vấn đề gì, ngay cả khi đã chỉ định type hints.\n\n### Kết luận:\nType hints là một công cụ hữu ích để cải thiện khả năng đọc và bảo trì mã, nhưng chúng không bắt buộc. Bạn có thể chọn sử dụng chúng tùy theo nhu cầu và phong cách lập trình của mình.",
+          "timestamp": "2026-04-24T12:58:35"
+        },
+        {
+          "turn": 10,
+          "role": "user",
+          "content": "Câu hỏi 9: Dataclass vs namedtuple khác nhau không?",
+          "timestamp": "2026-04-24T12:58:45"
+        },
+        {
+          "turn": 10,
+          "role": "assistant",
+          "content": "`dataclass` và `namedtuple` đều là các công cụ trong Python để tạo ra các kiểu dữ liệu có cấu trúc, nhưng chúng có một số khác biệt quan trọng về cách sử dụng và tính năng. Dưới đây là sự so sánh giữa hai loại này:\n\n### 1. **Cú pháp và cách tạo**:\n- **namedtuple**:\n  - Được tạo bằng cách sử dụng hàm `namedtuple` từ module `collections`. Cú pháp khá đơn giản và dễ hiểu.\n  ```python\n  from collections import namedtuple\n\n  Point = namedtuple('Point', ['x', 'y'])\n  p = Point(10, 20)\n  ```\n\n- **dataclass**:\n  - Được giới thiệu trong Python 3.7, sử dụng decorator `@dataclass` để tự động tạo các phương thức như `__init__`, `__repr__`, `__eq__`, v.v.\n  ```python\n  from dataclasses import dataclass\n\n  @dataclass\n  class Point:\n      x: int\n      y: int\n\n  p = Point(10, 20)\n  ```\n\n### 2. **Tính năng**:\n- **namedtuple**:\n  - Là một kiểu dữ liệu bất biến (immutable), có nghĩa là bạn không thể thay đổi giá trị của các trường sau khi đã tạo.\n  - Hỗ trợ truy cập các trường bằng tên hoặc chỉ số.\n  - Không hỗ trợ các tính năng như mặc định cho các trường, phương thức, hoặc tính kế thừa.\n\n- **dataclass**:\n  - Có thể là mutable hoặc immutable, tùy thuộc vào cách bạn định nghĩa nó. Bạn có thể sử dụng tham số `frozen=True` để tạo một dataclass bất biến.\n  - Hỗ trợ các tính năng như giá trị mặc định cho các trường, phương thức tùy chỉnh, và tính kế thừa.\n  - Tự động tạo các phương thức như `__repr__`, `__eq__`, và `__hash__` (nếu cần).\n\n### 3. **Hiệu suất**:\n- **namedtuple**:\n  - Thường nhanh hơn trong việc tạo và truy cập, vì nó là một cấu trúc dữ liệu đơn giản hơn.\n\n- **dataclass**:\n  - Có thể chậm hơn một chút do tính năng phong phú hơn, nhưng sự khác biệt này thường không đáng kể trong hầu hết các trường hợp.\n\n### 4. **Sử dụng**:\n- **namedtuple**:\n  - Thích hợp cho các trường hợp đơn giản, nơi bạn chỉ cần một cấu trúc dữ liệu bất biến với một số trường.\n\n- **dataclass**:\n  - Thích hợp cho các trường hợp phức tạp hơn, nơi bạn cần tính năng như kế thừa, phương thức, hoặc giá trị mặc định.\n\n### Kết luận:\n- Nếu bạn cần một cấu trúc dữ liệu đơn giản và bất biến, `namedtuple` là một lựa chọn tốt.\n- Nếu bạn cần nhiều tính năng hơn, như khả năng thay đổi, phương thức, hoặc giá trị mặc định, `dataclass` là lựa chọn tốt hơn. \n\nCả hai đều có ưu điểm riêng và bạn có thể chọn loại nào phù hợp nhất với nhu cầu của mình.",
+          "timestamp": "2026-04-24T12:58:45"
+        },
+        {
+          "turn": 11,
+          "role": "user",
+          "content": "Câu hỏi 10: asyncio dùng khi nào?",
+          "timestamp": "2026-04-24T12:58:56"
+        },
+        {
+          "turn": 11,
+          "role": "assistant",
+          "content": "`asyncio` là một thư viện trong Python được sử dụng để viết mã bất đồng bộ (asynchronous) và xử lý các tác vụ đồng thời mà không cần tạo nhiều luồng (threads) hoặc tiến trình (processes). Dưới đây là một số trường hợp khi bạn nên sử dụng `asyncio`:\n\n### 1. **I/O-bound tasks**:\n- Khi bạn có các tác vụ mà thời gian chờ đợi chủ yếu là do I/O (như đọc/ghi tệp, truy vấn cơ sở dữ liệu, hoặc gọi API), `asyncio` rất hữu ích. Nó cho phép bạn thực hiện các tác vụ khác trong khi chờ đợi I/O hoàn tất, giúp tăng hiệu suất.\n\n### 2. **Network applications**:\n- `asyncio` rất phù hợp cho các ứng dụng mạng, như máy chủ web, máy khách HTTP, hoặc các ứng dụng chat. Bạn có thể xử lý nhiều kết nối đồng thời mà không cần tạo nhiều luồng.\n\n### 3. **Tác vụ đồng thời**:\n- Khi bạn cần thực hiện nhiều tác vụ đồng thời mà không cần chờ đợi từng tác vụ hoàn tất trước khi bắt đầu tác vụ tiếp theo. Ví dụ, bạn có thể tải nhiều tệp từ internet cùng một lúc.\n\n### 4. **Khi sử dụng thư viện hỗ trợ async**:\n- Nếu bạn đang sử dụng các thư viện hỗ trợ bất đồng bộ (như `aiohttp` cho HTTP, `aiomysql` cho MySQL, hoặc `asyncpg` cho PostgreSQL), bạn nên sử dụng `asyncio` để tận dụng tối đa khả năng của các thư viện này.\n\n### 5. **Khi cần kiểm soát luồng thực thi**:\n- `asyncio` cho phép bạn kiểm soát luồng thực thi của chương trình một cách linh hoạt hơn, giúp bạn dễ dàng quản lý các tác vụ phức tạp.\n\n### Ví dụ sử dụng `asyncio`:\nDưới đây là một ví dụ đơn giản về cách sử dụng `asyncio` để thực hiện các tác vụ bất đồng bộ:\n\n```python\nimport asyncio\n\nasync def fetch_data(url):\n    print(f\"Fetching data from {url}...\")\n    await asyncio.sleep(2)  # Giả lập thời gian chờ đợi\n    print(f\"Data fetched from {url}\")\n\nasync def main():\n    urls = [\"http://example.com/1\", \"http://example.com/2\", \"http://example.com/3\"]\n    tasks = [fetch_data(url) for url in urls]\n    await asyncio.gather(*tasks)  # Chạy tất cả các tác vụ đồng thời\n\n# Chạy chương trình\nasyncio.run(main())\n```\n\n### Kết luận:\nSử dụng `asyncio` khi bạn cần xử lý các tác vụ I/O-bound, xây dựng ứng dụng mạng, hoặc khi bạn muốn thực hiện nhiều tác vụ đồng thời mà không cần tạo nhiều luồng. Nó giúp cải thiện hiệu suất và khả năng mở rộng của ứng dụng của bạn.",
+          "timestamp": "2026-04-24T12:58:56"
+        }
+      ],
+      "probe": {
+        "question": "Bạn có nhớ tên tôi và tôi đang ở thành phố nào không?",
+        "no_memory_response": {
+          "content": "Xin lỗi, nhưng tôi không có khả năng nhớ thông tin cá nhân của bạn hoặc biết bạn đang ở thành phố nào. Tôi không lưu trữ thông tin từ các cuộc trò chuyện trước. Tuy nhiên, tôi rất vui được giúp bạn với bất kỳ câu hỏi nào bạn có!",
+          "word_count": 51
+        },
+        "with_memory_response": {
+          "content": "Có, bạn tên là Minh và bạn đang ở TP.HCM.",
+          "word_count": 10
+        }
+      },
+      "result": {
+        "passed": true,
+        "expected_keywords": [
+          "Minh",
+          "TP.HCM",
+          "hồ chí minh"
+        ],
+        "pass_condition": "any"
+      }
+    },
+    {
+      "scenario_id": 10,
+      "description": "Combined: profile recall + episodic recall",
+      "category": "combined",
+      "started_at": "2026-04-24T12:58:59",
+      "finished_at": "2026-04-24T12:59:20",
+      "setup_turns": [
+        {
+          "turn": 1,
+          "role": "user",
+          "content": "Tôi tên là Hoa, tôi làm việc tại một công ty startup fintech.",
+          "timestamp": "2026-04-24T12:59:02"
+        },
+        {
+          "turn": 1,
+          "role": "assistant",
+          "content": "Chào Hoa! Rất vui được biết bạn. Làm việc tại một công ty startup fintech chắc hẳn có nhiều điều thú vị và thách thức. Bạn có đang làm việc với công nghệ nào đặc biệt không?",
+          "timestamp": "2026-04-24T12:59:02"
+        },
+        {
+          "turn": 2,
+          "role": "user",
+          "content": "Tôi vừa hoàn thành khóa học về LangChain và LLM applications.",
+          "timestamp": "2026-04-24T12:59:06"
+        },
+        {
+          "turn": 2,
+          "role": "assistant",
+          "content": "Chúc mừng bạn đã hoàn thành khóa học về LangChain và LLM applications! Đây là một lĩnh vực rất thú vị và đang phát triển nhanh chóng. Bạn có thấy điều gì đặc biệt hoặc hữu ích từ khóa học mà bạn muốn chia sẻ không?",
+          "timestamp": "2026-04-24T12:59:06"
+        },
+        {
+          "turn": 3,
+          "role": "user",
+          "content": "Tôi đã xây dựng một chatbot hỗ trợ khách hàng sử dụng RAG pattern.",
+          "timestamp": "2026-04-24T12:59:08"
+        },
+        {
+          "turn": 3,
+          "role": "assistant",
+          "content": "Thật tuyệt vời khi bạn đã xây dựng một chatbot hỗ trợ khách hàng sử dụng RAG pattern! Việc kết hợp tìm kiếm tài liệu với LLM chắc chắn sẽ giúp cải thiện độ chính xác và tính hiệu quả của chatbot. Bạn có gặp phải thách thức nào trong quá trình phát triển không? Hoặc có điều gì bạn muốn cải thiện thêm cho chatbot của mình?",
+          "timestamp": "2026-04-24T12:59:08"
+        },
+        {
+          "turn": 4,
+          "role": "user",
+          "content": "Chatbot đạt kết quả tốt, khách hàng hài lòng, tỷ lệ resolve tăng 30%.",
+          "timestamp": "2026-04-24T12:59:12"
+        },
+        {
+          "turn": 4,
+          "role": "assistant",
+          "content": "Thật tuyệt vời khi nghe rằng chatbot của bạn đạt kết quả tốt và tỷ lệ giải quyết vấn đề tăng 30%! Điều này cho thấy rằng việc áp dụng RAG pattern đã mang lại hiệu quả rõ rệt. Bạn có kế hoạch gì cho các tính năng tiếp theo hoặc mở rộng chatbot không?",
+          "timestamp": "2026-04-24T12:59:12"
+        },
+        {
+          "turn": 5,
+          "role": "user",
+          "content": "Bây giờ tôi muốn thêm tính năng memory cho chatbot.",
+          "timestamp": "2026-04-24T12:59:16"
+        },
+        {
+          "turn": 5,
+          "role": "assistant",
+          "content": "Thêm tính năng memory cho chatbot là một ý tưởng tuyệt vời! Tính năng này có thể giúp chatbot ghi nhớ thông tin từ các cuộc trò chuyện trước đó, từ đó cung cấp trải nghiệm cá nhân hóa hơn cho khách hàng. Bạn có dự định sử dụng công nghệ nào để triển khai tính năng này không? Ví dụ, bạn có thể sử dụng Redis để lưu trữ thông tin tạm thời hoặc một cơ sở dữ liệu khác để lưu trữ lâu dài.",
+          "timestamp": "2026-04-24T12:59:16"
+        }
+      ],
+      "probe": {
+        "question": "Tên tôi là gì và tôi đã hoàn thành dự án nào gần đây?",
+        "no_memory_response": {
+          "content": "Xin lỗi, nhưng tôi không có thông tin cá nhân về bạn hoặc các dự án bạn đã hoàn thành. Nếu bạn cần giúp đỡ về một dự án cụ thể hoặc muốn thảo luận về một chủ đề nào đó, hãy cho tôi biết!",
+          "word_count": 45
+        },
+        "with_memory_response": {
+          "content": "Tên bạn là Hoa, và gần đây bạn đã hoàn thành dự án xây dựng một chatbot hỗ trợ khách hàng sử dụng RAG pattern, đạt được tỷ lệ giải quyết vấn đề tăng 30%. Bạn cũng vừa hoàn thành khóa học về LangChain và LLM applications.",
+          "word_count": 47
+        }
+      },
+      "result": {
+        "passed": true,
+        "expected_keywords": [
+          "Hoa",
+          "chatbot",
+          "rag",
+          "langchain",
+          "30%"
+        ],
+        "pass_condition": "any"
+      }
+    }
+  ]
+}

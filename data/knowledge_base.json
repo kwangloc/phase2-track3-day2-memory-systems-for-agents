@@ -1,0 +1,22 @@
+[
+  {
+    "id": "python_decorator",
+    "text": "Python decorator là một hàm nhận một hàm khác làm đối số và trả về một hàm mới. Cú pháp @decorator_name đặt trước định nghĩa hàm. Decorator dùng để thêm chức năng như logging, authentication, caching mà không sửa code gốc. Ví dụ tích hợp: @property, @staticmethod, @classmethod, @functools.wraps."
+  },
+  {
+    "id": "docker_networking",
+    "text": "Docker container giao tiếp với nhau qua Docker network. Trong Docker Compose, các service tự động nằm chung một network và dùng tên service làm hostname. Ví dụ: service database tên 'db' thì kết nối bằng host='db', không dùng host='localhost'. Tạo network thủ công: docker network create mynetwork. Kết nối container: docker run --network=mynetwork ..."
+  },
+  {
+    "id": "langchain_rag",
+    "text": "RAG (Retrieval-Augmented Generation) kết hợp tìm kiếm tài liệu với LLM. Quy trình: embed câu hỏi → tìm tài liệu liên quan trong vector store → đưa vào prompt → LLM trả lời. LangChain hỗ trợ RAG qua RetrievalQA và LCEL. Vector store phổ biến: Chroma, FAISS, Pinecone. Ưu điểm RAG: giảm hallucination, dễ cập nhật kiến thức mà không cần fine-tune."
+  },
+  {
+    "id": "fastapi_basics",
+    "text": "FastAPI là framework Python hiện đại để xây dựng REST API hiệu suất cao. Tự động sinh OpenAPI docs tại /docs và /redoc. Dùng Pydantic để validate request/response. Hỗ trợ async/await natively với Starlette. Cài đặt: pip install fastapi uvicorn. Chạy server: uvicorn main:app --reload"
+  },
+  {
+    "id": "redis_caching",
+    "text": "Redis là in-memory data store dùng cho caching, session, và message queue. Cache invalidation strategies: TTL-based (setex), event-based, manual delete. Python client: import redis; r = redis.Redis(host='localhost', port=6379). Set với TTL: r.setex('key', 3600, 'value'). Get: value = r.get('key'). Pub/Sub: r.publish('channel', 'message')."
+  }
+]

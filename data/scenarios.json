@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "description": "Recall user name after 6 turns",
+    "category": "profile_recall",
+    "setup_turns": [
+      "Xin chào! Tôi tên là Linh.",
+      "Tôi đang học Python được 2 tháng rồi.",
+      "Bạn có thể giải thích list comprehension không?",
+      "Còn lambda function thì sao?",
+      "Tôi hay dùng VS Code để code Python.",
+      "Generator expression khác list comprehension như thế nào?"
+    ],
+    "probe": "Bạn có nhớ tên tôi là gì không?",
+    "expected_keywords": ["Linh"],
+    "pass_condition": "any"
+  },
+  {
+    "id": 2,
+    "description": "Allergy conflict update (sữa bò → đậu nành)",
+    "category": "conflict_update",
+    "setup_turns": [
+      "Tôi dị ứng sữa bò.",
+      "Bạn hãy gợi ý một thực đơn buổi sáng phù hợp cho tôi.",
+      "À nhầm, tôi dị ứng đậu nành chứ không phải sữa bò.",
+      "Cảm ơn bạn đã lưu ý nhé."
+    ],
+    "probe": "Tôi bị dị ứng với thứ gì vậy?",
+    "expected_keywords": ["đậu nành"],
+    "pass_condition": "any"
+  },
+  {
+    "id": 3,
+    "description": "Recall previous Docker debug lesson",
+    "category": "episodic_recall",
+    "setup_turns": [
+      "Tôi gặp lỗi khi connect Django đến PostgreSQL qua Docker Compose.",
+      "Lỗi cụ thể: django.db.utils.OperationalError: could not connect to server.",
+      "Bạn gợi ý tôi dùng tên service thay vì localhost — đã fix được rồi!",
+      "Cảm ơn bạn rất nhiều.",
+      "Bây giờ tôi muốn hỏi về Redis caching.",
+      "Cache invalidation hoạt động như thế nào?"
+    ],
+    "probe": "Lần trước tôi gặp vấn đề gì với Docker và bạn đã giúp tôi giải quyết như thế nào?",
+    "expected_keywords": ["docker", "django", "service", "postgresql", "localhost"],
+    "pass_condition": "any"
+  },
+  {
+    "id": 4,
+    "description": "Retrieve Python decorator FAQ chunk",
+    "category": "semantic_retrieval",
+    "setup_turns": [
+      "Tôi muốn học các khái niệm Python nâng cao.",
+      "Tôi đã quen với OOP rồi."
+    ],
+    "probe": "Decorator trong Python là gì và dùng như thế nào?",
+    "expected_keywords": ["decorator", "@", "hàm", "logging", "property"],
+    "pass_condition": "any"
+  },
+  {
+    "id": 5,
+    "description": "Recall user job title after context switch",
+    "category": "profile_recall",
+    "setup_turns": [
+      "Tôi là backend developer, chuyên về Python và FastAPI.",
+      "Gần đây tôi đang tìm hiểu về microservices.",
+      "API Gateway là gì?",
+      "Load balancing hoạt động như thế nào?",
+      "Kubernetes có phức tạp không?"
+    ],
+    "probe": "Nghề nghiệp của tôi là gì?",
+    "expected_keywords": ["backend", "developer", "fastapi", "python"],
+    "pass_condition": "any"
+  },
+  {
+    "id": 6,
+    "description": "Multi-fact recall: name, age, job, allergy",
+    "category": "profile_recall",
+    "setup_turns": [
+      "Tôi tên là Nam, năm nay 25 tuổi.",
+      "Tôi làm data scientist tại Hà Nội.",
+      "Tôi bị dị ứng với hải sản.",
+      "Bạn có thể giải thích machine learning không?"
+    ],
+    "probe": "Bạn biết gì về tôi? Hãy liệt kê các thông tin bạn nhớ.",
+    "expected_keywords": ["Nam", "25", "data", "hải sản"],
+    "pass_condition": "any"
+  },
+  {
+    "id": 7,
+    "description": "Recall previous ML project outcome",
+    "category": "episodic_recall",
+    "setup_turns": [
+      "Tôi đang xây dựng model phân tích sentiment cho review sản phẩm.",
+      "Model BERT của tôi đạt accuracy 87% trên test set.",
+      "Tôi quyết định deploy lên AWS Lambda.",
+      "Deploy thành công, hệ thống đang chạy ổn định.",
+      "Bây giờ tôi muốn bắt đầu dự án mới về computer vision."
+    ],
+    "probe": "Dự án sentiment analysis của tôi kết quả như thế nào?",
+    "expected_keywords": ["87", "bert", "lambda", "thành công", "aws"],
+    "pass_condition": "any"
+  },
+  {
+    "id": 8,
+    "description": "Retrieve Docker networking FAQ chunk",
+    "category": "semantic_retrieval",
+    "setup_turns": [
+      "Tôi đang học DevOps và container technology.",
+      "Tôi hay dùng Docker Compose để chạy multi-container apps."
+    ],
+    "probe": "Làm thế nào để các Docker container giao tiếp với nhau trong cùng một network?",
+    "expected_keywords": ["service", "network", "hostname", "compose", "tên service"],
+    "pass_condition": "any"
+  },
+  {
+    "id": 9,
+    "description": "Token budget: profile survives after 10+ turns",
+    "category": "trim_budget",
+    "setup_turns": [
+      "Tôi tên là Minh, tôi làm việc ở TP.HCM.",
+      "Câu hỏi 1: Python list vs tuple khác nhau như thế nào?",
+      "Câu hỏi 2: Dictionary comprehension dùng như thế nào?",
+      "Câu hỏi 3: Exception handling best practices là gì?",
+      "Câu hỏi 4: Virtual environment dùng để làm gì?",
+      "Câu hỏi 5: pip install vs conda install khác nhau không?",
+      "Câu hỏi 6: f-string là gì?",
+      "Câu hỏi 7: Walrus operator (:=) dùng như thế nào?",
+      "Câu hỏi 8: Type hints có bắt buộc không?",
+      "Câu hỏi 9: Dataclass vs namedtuple khác nhau không?",
+      "Câu hỏi 10: asyncio dùng khi nào?"
+    ],
+    "probe": "Bạn có nhớ tên tôi và tôi đang ở thành phố nào không?",
+    "expected_keywords": ["Minh", "TP.HCM", "hồ chí minh"],
+    "pass_condition": "any"
+  },
+  {
+    "id": 10,
+    "description": "Combined: profile recall + episodic recall",
+    "category": "combined",
+    "setup_turns": [
+      "Tôi tên là Hoa, tôi làm việc tại một công ty startup fintech.",
+      "Tôi vừa hoàn thành khóa học về LangChain và LLM applications.",
+      "Tôi đã xây dựng một chatbot hỗ trợ khách hàng sử dụng RAG pattern.",
+      "Chatbot đạt kết quả tốt, khách hàng hài lòng, tỷ lệ resolve tăng 30%.",
+      "Bây giờ tôi muốn thêm tính năng memory cho chatbot."
+    ],
+    "probe": "Tên tôi là gì và tôi đã hoàn thành dự án nào gần đây?",
+    "expected_keywords": ["Hoa", "chatbot", "rag", "langchain", "30%"],
+    "pass_condition": "any"
+  }
+]
